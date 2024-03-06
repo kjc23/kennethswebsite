@@ -7,7 +7,7 @@ import "../App.css";
 export default function HeroSection() {
     return(
         <div className="hero-container">
-            <video src="/videos/edited_body_building.mp4" autoPlay loop muted />
+            <video src="../../public/videos/edited_body_building.mp4" autoPlay loop muted />
             <h1>AMATEUR BODY BUILDERS OF SCOTLAND</h1>
             <p></p>
             <div className="hero-btns">
