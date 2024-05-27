@@ -30,6 +30,7 @@
     flex: 1;
     margin: 0 1rem;
     border-radius: 10px;
+    width: 300px;
   }
   
   .cards__item__link {
@@ -49,6 +50,8 @@
     width: 100%;
     padding-top: 67%;
     overflow: hidden;
+    transition: all 0.2s linear;
+
   }
   
   .fade-img {
@@ -57,7 +60,7 @@
   }
   
   .cards__item__pic-wrap::after {
-    content: attr(data-category);
+    /* content: attr(data-category); */
     position: absolute;
     bottom: 0;
     margin-left: 10px;
@@ -85,9 +88,23 @@
     transition: all 0.2s linear;
   }
   
-  .cards__item__img:hover {
+  .cards__item__pic-wrap:hover {
     transform: scale(1.1);
   }
+  
+  .cards_item_text_overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+  }
+
   
   .cards__item__info {
     padding: 20px 30px 30px;

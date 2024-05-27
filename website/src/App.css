@@ -6,18 +6,18 @@
 }
 
 .home,
-.services,
+.bible,
 .products,
-.sign-up {
+.music {
   display: flex;
-  height: 90vh;
+  height: 70vh;
   align-items: center;
   justify-content: center;
   font-size: 3rem;
 }
 
-.services {
-  background-image: url('../public/images/img-2.jpg');
+.bible {
+  background-image: url('../public/images/bible2.jpeg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -34,8 +34,8 @@
   font-size: 100px;
 }
 
-.sign-up {
-  background-image: url('../public/images/img-8.jpg');
+.music {
+  background-image: url('../public/images/music.webp');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

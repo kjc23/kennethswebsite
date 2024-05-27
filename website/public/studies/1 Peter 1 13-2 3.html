@@ -1,0 +1,678 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>1 Peter 1:13-2:3</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="ec45bd2f-841f-40e4-aec8-17cba681d1c1" class="page mono"><header><h1 class="page-title">1 Peter 1:13-2:3</h1><p class="page-description"></p></header><div class="page-body"><p id="0baa54b5-d66c-4a3e-9be9-24c6cdc65c66" class=""><mark class="highlight-red"><time>@September 28, 2023</time></mark></p><p id="68106c59-fd6a-4665-820c-5fc572affdfd" class="">Passage: </p><figure id="c572877a-7926-471f-af35-21698b53207b" class="link-to-page"><a href="https://www.notion.so/1-Peter-1-13-2-3-c572877a7926471faf3521698b53207b?pvs=21">1 Peter 1:13-2:3</a></figure><h1 id="67d3f48e-1620-463a-b630-3ab80f5e61c4" class="">Theme:</h1><p id="4340cc90-c624-4d64-9953-ece9c8975359" class="">Christians have been redeemed from their old way of life and are called to be a holy people living for God&#x27;s glory.</p><h1 id="2283c297-29c8-4f14-b4b1-456bbf18b48b" class="">Aim:</h1><p id="f17fa145-6688-4d71-8ad1-84e9776deb70" class="">BECAUSE of our new life, live radically new lifestyles marked by love for God and His people. In detail, focus on the future, be holy, fear God, love Christians, crave God&#x27;s word.</p><h2 id="f0fe23ef-36ba-4af5-a0f5-317d814a779d" class="">Start by recapping previous section (1 Peter 1:1-13)</h2><ul id="8d166c73-8d28-4b9c-a5b9-fc81ddd5152a" class="bulleted-list"><li style="list-style-type:disc">Things that now belong to those who believe<ul id="ee94011c-5164-4164-9ec1-54bb65778263" class="bulleted-list"><li style="list-style-type:circle"><mark class="highlight-teal">Born again</mark>, into <mark class="highlight-teal">living</mark> hope (v. 3)</li></ul><ul id="c1e0f4fe-3125-4320-8598-317a297c8dd6" class="bulleted-list"><li style="list-style-type:circle"><mark class="highlight-teal">Inheritance</mark> that is imperishable, undefiled, and unfading (kept in heaven, guarded by God) (v.4)</li></ul><ul id="c8281a3d-72f9-4008-93a3-5b791c603a5f" class="bulleted-list"><li style="list-style-type:circle"><mark class="highlight-teal">Salvation</mark> of your soul (v. 9)</li></ul><ul id="8060de66-5fce-4358-bc01-9cb7ed53ff45" class="bulleted-list"><li style="list-style-type:circle">These things were unknown by the prophets and have now been preached to you (v.11-12)</li></ul><ul id="546c5166-255b-420a-8cee-80c6fa88a169" class="bulleted-list"><li style="list-style-type:circle">Angels long to see these great things (v.12)</li></ul></li></ul><ul id="35fcae40-3b66-4e38-be7d-3f6ce9d653a8" class="bulleted-list"><li style="list-style-type:disc">Talk of being <mark class="highlight-teal">elect exiles</mark> (v.1)</li></ul><ul id="dd33eac5-721b-45e7-9983-969b6bba1c81" class="bulleted-list"><li style="list-style-type:disc">Peter speaking to largely Gentile population</li></ul><h2 id="870de29c-f064-48c2-b25d-c41102374709" class="">Call out the THEREFORE</h2><ul id="9633cb79-6bd3-4163-b6a7-e3bbc5584751" class="bulleted-list"><li style="list-style-type:disc">Everything that follows in our passage is in light of what we read in 1:1-13.</li></ul><h2 id="f28d78b1-13b6-41d4-b93c-475ddf367789" class="">List out all of the commands given in the passage</h2><p id="24c5798f-59da-4169-8e83-06767c2f1e3d" class="">(Have someone write them on paper as people shout them out)</p><ul id="885c519a-741c-43ea-9542-6b157d715e07" class="bulleted-list"><li style="list-style-type:disc">Prepare minds for action (v.13)</li></ul><ul id="d3a013f1-906d-463c-b564-e33c4090c820" class="bulleted-list"><li style="list-style-type:disc">Be sober-minded (v.13)</li></ul><ul id="d28d9186-8002-4901-8da3-50313d98a85b" class="bulleted-list"><li style="list-style-type:disc">Set hope fully on grace (v.13)</li></ul><ul id="f157857e-a933-432b-a7d1-9428fdf1863e" class="bulleted-list"><li style="list-style-type:disc">Do not be conformed to passions (v.14)</li></ul><ul id="347e3575-0657-4b84-b46d-476ad3d5fbba" class="bulleted-list"><li style="list-style-type:disc">Be holy (v.15)</li></ul><ul id="75feaa6c-f104-4a03-8ce7-a340e2304bd3" class="bulleted-list"><li style="list-style-type:disc">Conduct yourselves with fear (v.17)</li></ul><ul id="ce25ed1c-7661-4478-9ec5-0be6efb57453" class="bulleted-list"><li style="list-style-type:disc">Purify your souls (v.22)</li></ul><ul id="35ffda78-df70-43c1-8005-412940009707" class="bulleted-list"><li style="list-style-type:disc">Love one another (v.22)</li></ul><ul id="14f640e9-8ec7-46ad-9d43-1afe5f3e3708" class="bulleted-list"><li style="list-style-type:disc">Put away malice, deceit, hypocrisy, envy, slander (2:1)</li></ul><ul id="5d40b45b-e55b-4e03-9bdc-b0adf0d780da" class="bulleted-list"><li style="list-style-type:disc">Long for spiritual milk (2:2)</li></ul><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="42661704-7451-46bf-b393-0d0f558e81dd"><div style="font-size:1.5em"><span class="icon">✅</span></div><div style="width:100%">There are only 5 commands in the original Greek:<br/>1. Set hope on future<br/>2. Be holy<br/>3. Fear God<br/>4. Love Christian family<br/>5. Crave milk<br/></div></figure><h2 id="bc485078-425a-45f2-b42e-e395b4639a0b" class="">1. Set hope on future (v13)</h2><hr id="79c2d0e1-cfca-4b65-9a86-00fb6d9fdfe9"/><p id="2aef383f-08af-42da-b9aa-012cf7c4058e" class=""><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em>Note: Setting your hope on something means to place your weight on it (trusting it to hold you)</em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></p><ol type="1" id="3828132e-086b-4689-85fa-1725da0e0155" class="numbered-list" start="1"><li><mark class="highlight-red">Where do you tend to set your hope?</mark></li></ol><ol type="1" id="1df4d107-1a5b-48b9-94e3-fe03e1ba37b7" class="numbered-list" start="2"><li><mark class="highlight-red">How do we go about setting our hope on this grace?</mark><ul id="afa3b3b4-18d7-4bea-82b1-da294c7f903b" class="bulleted-list"><li style="list-style-type:disc">Having an eternal mindset</li></ul><ul id="7dd84f51-0a4a-472c-823e-3e75c5a6902d" class="bulleted-list"><li style="list-style-type:disc">Continuing in the faith through prayer, reading, serving, etc.</li></ul><ul id="c44ad076-f521-48e7-8a46-78b40fd7a453" class="bulleted-list"><li style="list-style-type:disc">Preparing mind for action and being sober-minded</li></ul></li></ol><h2 id="bfba5e8f-5384-4fe7-a5e9-bfe386165bab" class="">2. Be holy (v14-16)</h2><hr id="d45ced13-5445-4835-979b-53e8340cf9cc"/><ol type="1" id="20cc475c-9ab6-4184-8926-74ac1ac10044" class="numbered-list" start="1"><li><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red">Why are we called to be holy?</mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark><ul id="9f4e5de3-f87b-409f-a648-37cf2d6d00d6" class="bulleted-list"><li style="list-style-type:disc">Because God is holy</li></ul><ul id="04cf72a0-6ca1-4086-84b2-d4d23c83d772" class="bulleted-list"><li style="list-style-type:disc">He has called us to be holy, like Him.</li></ul><ul id="b6c8b558-e9d8-4645-892c-b6a0f058efb4" class="bulleted-list"><li style="list-style-type:disc">To be “obedient children” (v.14) We belong to a new family and we should bear the family likeness.</li></ul></li></ol><ol type="1" id="4f728cc0-fc86-4494-9448-bbfa47b6503e" class="numbered-list" start="2"><li><mark class="highlight-red"><mark class="highlight-red">How do we go about being holy/what does it look like?</mark></mark><ul id="14ef34b2-d358-4cde-8a77-968682adeb27" class="bulleted-list"><li style="list-style-type:disc">Obedience to the truth (v.22)</li></ul><ul id="94e1b516-edd1-4afc-a822-9f95ff1e6ca8" class="bulleted-list"><li style="list-style-type:disc">Fearing God (v. 17)</li></ul><ul id="ddbb20e4-6f96-4c70-8b60-8313fd052f5a" class="bulleted-list"><li style="list-style-type:disc">Acknowledgement of sinfulness and turning to true repentance</li></ul><ul id="72684802-f3e0-4d99-b0a4-8f69e30e13de" class="bulleted-list"><li style="list-style-type:disc">Trusting God</li></ul><ul id="02d09787-cb36-46f4-bfa8-1316742ac7d4" class="bulleted-list"><li style="list-style-type:disc">Active choice each day that we largely fail at, but through the grace of God we are still His children.</li></ul></li></ol><ol type="1" id="a4f08db0-1178-4046-8584-ca92d4c6ab0f" class="numbered-list" start="3"><li><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red">How/where are we tempted to fall back into our “former ignorance”? (v.14)</mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark><p id="e48ec28c-321c-489c-9bf6-914f9553bb84" class=""><em><em><em><em><em><em><em><em><em>Open discussion. Let people share if they feel so inclined.</em></em></em></em></em></em></em></em></em></p><p id="a221773c-5523-47ab-9cd5-c935f82a71d7" class=""><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em>Could possibly have answers like: wanting to be successful/accepted by the world’s standards, falling into habitual sin, pressure from peers to indulge in sin, etc.</em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></p></li></ol><h2 id="6f9f99c8-c026-4a93-af51-8917ee058f2f" class="">3. Fear God (v17-21)</h2><hr id="3e050e83-6161-4226-832b-d84e7f37af06"/><ol type="1" id="fed6e28c-1307-46d4-8ad8-a454313fd6ef" class="numbered-list" start="1"><li><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red">What does Peter mean by “conduct yourselves with FEAR?”</mark></mark></mark></mark><ul id="ccb2b53b-059c-4565-89df-5b053f26e6a4" class="bulleted-list"><li style="list-style-type:disc">Fear in this context refers to a <mark class="highlight-yellow">holy reverence</mark> of God</li></ul><ul id="c224a9e6-3d90-4f62-820b-653cc1720749" class="bulleted-list"><li style="list-style-type:disc">God is so great and so unbelievably good and holy that we can do nothing but revere Him and be grateful to Him for His overwhelming mercy and love.</li></ul><p id="66b54f21-2733-4109-93af-4df17f8af507" class=""><mark class="highlight-blue"><em>In light of these following things/with this in mind, we are to fear God</em></mark></p><ul id="14f2b715-75b8-4544-89c6-575d026676e2" class="bulleted-list"><li style="list-style-type:disc">We were ransomed from our futile ways (v.18)<ul id="72325658-03ab-4a62-9c06-b72b7f598768" class="bulleted-list"><li style="list-style-type:circle">with the blood of Christ (v.19)<ul id="019f9572-ffc4-479b-ab04-f2c7a511eb8a" class="bulleted-list"><li style="list-style-type:square">who was foreknown before the foundation of the world</li></ul><ul id="af2233d6-cc91-485f-9786-8e05315fad45" class="bulleted-list"><li style="list-style-type:square">through whom we are believers in God<ul id="22e4c301-35ba-4bbc-887f-e84f49db9b3e" class="bulleted-list"><li style="list-style-type:disc">who raised Him from the dead<ul id="64349911-1b3a-4224-9fc8-7162c5a5e378" class="bulleted-list"><li style="list-style-type:circle">SO THAT your faith and hope are in God</li></ul></li></ul></li></ul></li></ul></li></ul></li></ol><h2 id="ce8f3da4-3454-4bb3-bcac-ec055f63a88b" class="">4. Love Christian Family (v22-25)</h2><hr id="61c68dd6-4999-4473-a947-bf8a645477ac"/><ol type="1" id="6278f8ba-483b-470a-a380-8584dcbd9827" class="numbered-list" start="1"><li><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red">What does it look like to earnestly love someone from a pure heart?</mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark><ul id="f350488f-4fe3-4b43-8a2f-eadd83c06a51" class="bulleted-list"><li style="list-style-type:disc">To be selfless in caring for them</li></ul><ul id="d4deb972-ba86-41fc-99f1-0798e8abbca0" class="bulleted-list"><li style="list-style-type:disc">To put them before yourself, not to feel good about yourself, but because it is what God has called us to do</li></ul></li></ol><ol type="1" id="8e928b1d-e103-49f7-b1aa-dc213ef67ff3" class="numbered-list" start="2"><li><mark class="highlight-red">Why are we to love others in this way?</mark><ul id="052483f8-e867-484a-865e-4aaeb6453924" class="bulleted-list"><li style="list-style-type:disc"></li></ul></li></ol><ol type="1" id="47e04894-6e78-4671-8182-f38df620e22f" class="numbered-list" start="3"><li><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red">Is there a time in which you have experienced or seen this?</mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark><p id="6e4ef778-fd21-4204-a5f2-648a57d18cc9" class=""><em><em><em><em><em><em>Let people discuss for a little bit.</em></em></em></em></em></em></p></li></ol><h2 id="f43147b0-7f4c-4d80-8b71-0912347ef984" class="">5. Crave milk (2:1-3)</h2><hr id="b6196bdb-cea1-4da7-917a-2fe20c48dbc6"/><ol type="1" id="8dcd7b44-3a07-427f-a57b-7d4eecf946b9" class="numbered-list" start="1"><li><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red">What’s similar about the evils we are to put away?</mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark><ul id="4ab15aa9-2f89-44e2-bb53-c895f5929ad9" class="bulleted-list"><li style="list-style-type:disc">They are all relational evils</li></ul><ul id="0050a686-67cc-40b4-aa3d-321e593c8fd7" class="bulleted-list"><li style="list-style-type:disc">If we are to love others, we must put away these evils that we do towards others</li></ul></li></ol><ol type="1" id="3caca228-31f1-4099-98f1-71ea2792b833" class="numbered-list" start="2"><li><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red"><mark class="highlight-red">Why does Peter use this analogy of milk?</mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark><ul id="3e5b83c6-f7de-403a-b6d7-811c71eae0b1" class="bulleted-list"><li style="list-style-type:disc">This analogy helps us to see that we should be fully dependent on God for our growth</li></ul><ul id="772793e7-47a8-4358-bddf-ac4b7a5eba2d" class="bulleted-list"><li style="list-style-type:disc">Like a baby is helpless to feed itself without the help of its mother, we are to come to God humbly and without preconceived notions.</li></ul><ul id="ab045a4c-10ae-4a98-87f1-be20ef3fbcfe" class="bulleted-list"><li style="list-style-type:disc">Like a mother is there to provide nourishment for her child, God is there to provide us with spiritual nourishment</li></ul></li></ol><ol type="1" id="447d3366-c340-422f-aec0-fe6dd594f7cd" class="numbered-list" start="3"><li><mark class="highlight-red">How would you summarize this passage?</mark></li></ol><p id="a2962bd3-e37e-4f92-a334-4500ccff9a84" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

@@ -29,9 +29,9 @@ export default function Navbar() {
       <>
           <nav className="navbar">
               <div className="navbar-container">
-                <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+                {/* <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
                   ABB <FontAwesomeIcon icon={faDumbbell} />
-                </Link>
+                </Link> */}
                 <div className="menu-icon" onClick={handleClick}>
                   <FontAwesomeIcon icon={click ? faTimes : faBars} />
                 </div>
@@ -42,22 +42,22 @@ export default function Navbar() {
                       </Link>
                   </li>
                   <li className="nav-item">
-                      <Link to='/Services' className="nav-links" onClick={closeMobileMenu}>
-                          Events
+                      <Link to='/bible' className="nav-links" onClick={closeMobileMenu}>
+                          Bible
                       </Link>
                   </li>
                   <li className="nav-item">
-                      <Link to='/Products' className="nav-links" onClick={closeMobileMenu}>
-                          About Us
+                      <Link to='/music' className="nav-links" onClick={closeMobileMenu}>
+                          Music
                       </Link>
                   </li>
                   <li className="nav-item">
-                      <Link to='/sign-up' className="nav-links-mobile" onClick={closeMobileMenu}>
-                          Sign Up
+                      <Link to='/recipes' className="nav-links" onClick={closeMobileMenu}>
+                          Recipes
                       </Link>
                   </li>
                 </ul>
-                {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+                {/* {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>} */}
               </div>
           </nav>
       </>
