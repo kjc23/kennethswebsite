@@ -4,7 +4,7 @@ video {
     height: 100%;
     position: fixed;
     z-index: -1;
-}
+} 
 
 .hero-container {
     background: url('../../public/images/img-home.jpg') center center/cover no-repeat;
