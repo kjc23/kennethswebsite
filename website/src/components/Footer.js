@@ -2,7 +2,7 @@ import React from 'react';
 import './Footer.css';
 import { Button } from './Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faInstagram, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faInstagram, faFacebook, faLinkedin, faSpotify } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
 
 function Footer() {
@@ -43,6 +43,12 @@ function Footer() {
             >
               <FontAwesomeIcon icon={faLinkedin} />
             </Link>
+            <Link
+              class='social-icon-link spotify'
+              to={"https://open.spotify.com/user/cain.kenny19"}
+              >
+                <FontAwesomeIcon icon={faSpotify} />
+              </Link>
           </div>
         </div>
       </section>
