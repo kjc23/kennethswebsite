@@ -1,6 +1,6 @@
 .cards {
-    padding: 4rem;
-    background: #cecbc7;
+    padding: 5rem 0 5rem 0;
+    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
   }
   
   h1 {
@@ -37,9 +37,9 @@
     display: flex;
     flex-flow: column;
     width: 100%;
-    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
-    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
-    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    box-shadow: 0 6px 20px rgba(195, 207, 229, 0.17);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(239, 240, 244, 0.017));
+    filter: drop-shadow(0 6px 20px rgba(87, 110, 146, 0.017));
     border-radius: 10px;
     overflow: hidden;
     text-decoration: none;

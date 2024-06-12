@@ -1,6 +1,6 @@
 .header-container {
     background-color: #cecbc7;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .header-container h1 {
@@ -8,4 +8,5 @@
     float: left;
     left: 18%;
     font-size: 3rem;
+    padding-top: 2rem;
 }

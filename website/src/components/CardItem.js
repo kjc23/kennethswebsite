@@ -10,9 +10,6 @@ export default function CardItem(props) {
                         <img src={props.src} alt="Travel" className="cards__item__img" />
                         <figcaption className="cards_item_text_overlay">{props.text}</figcaption>
                     </figure>
-                    {/* <div className="cards__item__info">
-                        <h5 className="cards__item__text">{props.text}</h5>
-                    </div> */}
                 </Link>
             </li>
         </>
