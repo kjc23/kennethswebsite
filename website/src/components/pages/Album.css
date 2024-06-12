@@ -1,8 +1,9 @@
 body {
+    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-  letter-spacing: -0.5px;
+    letter-spacing: -0.5px;
 }
 /* button {
     padding: 0;
@@ -14,16 +15,24 @@ body {
     height: 40px;
     float: left;
 } */
+.song {
+    padding: .5rem;
+}
+
+.songs-container {
+    padding: 1em;
+}
+
 #audio-player-container {
     --seek-before-width: 0%;
-      --volume-before-width: 100%;
-      --buffered-width: 0%;
-      position: relative;
-      margin: 100px 2.5% auto 2.5%;
-      width: 95%;
-      max-width: 500px;
-      height: 132px;
-      background: #fff;
+    --volume-before-width: 100%;
+    --buffered-width: 0%;
+    position: relative;
+    margin: 100px 2.5% auto 2.5%;
+    width: 95%;
+    max-width: 500px;
+    height: 132px;
+    background: #fff;
   }
   #audio-player-container::before {
       position: absolute;
