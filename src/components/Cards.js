@@ -10,13 +10,13 @@ export default function Cards() {
                 <div className="cards__wrapper">
                     <ul className="cards__items">
                         <CardItem
-                        src="kennethswebsite/images/bible2.jpeg"
+                        src="/kennethswebsite/images/bible2.jpeg"
                         text="Bible"
                         // label="Adventure"
                         path="/bible"
                         />
                         <CardItem
-                        src="kennethswebsite/images/music.webp"
+                        src="/kennethswebsite/images/music.webp"
                         text="Music"
                         label="Luxury"
                         path="/music"
@@ -24,19 +24,19 @@ export default function Cards() {
                     </ul>
                     <ul className="cards__items">
                         <CardItem
-                        src="kennethswebsite/images/recipes.webp"
+                        src="/kennethswebsite/images/recipes.webp"
                         text="Recipes"
                         label="Adventure"
                         path="/services"
                         />
                         <CardItem
-                        src="kennethswebsite/images/img-3.jpg"
+                        src="/kennethswebsite/images/img-3.jpg"
                         text="Travel through the Island of Bali"
                         label="Luxury"
                         path="/services"
                         />
                         <CardItem
-                        src="kennethswebsite/images/img-4.jpg"
+                        src="/kennethswebsite/images/img-4.jpg"
                         text="Travel through the Island of Bali"
                         label="Luxury"
                         path="/services"
