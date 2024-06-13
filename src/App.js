@@ -15,12 +15,12 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path='/' exact Component={Home} />
-        <Route path='/BBWebsite' exact Component={Home} />
-        <Route path='/bible' Component={Bible} />
-        <Route path='/bible/1Peter' element={<StudyHome name="1 Peter" />} />
-        <Route path='/bible/2Peter' element={<StudyHome name="2 Peter" />} />
-        <Route path='/bible/Micah' element={<StudyHome name="Micah" />} />
+        <Route path='/kennethswebsite' exact Component={Home} />
+        <Route path='/kennethswebsite/BBWebsite' exact Component={Home} />
+        <Route path='/kennethswebsite/bible' Component={Bible} />
+        <Route path='/kennethswebsite/bible/1Peter' element={<StudyHome name="1 Peter" />} />
+        <Route path='/kennethswebsite/bible/2Peter' element={<StudyHome name="2 Peter" />} />
+        <Route path='/kennethswebsite/bible/Micah' element={<StudyHome name="Micah" />} />
         <Route path='/music' Component={MusicHome} />
         <Route path='/music/Album1' element={<Album name="Album 1" /> } />
         <Route path='/music/Album2' element={<Album name="Album 2" /> } />
