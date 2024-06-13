@@ -31,13 +31,13 @@ export default function Cards() {
                         />
                         <CardItem
                         src="/kennethswebsite/images/img-3.jpg"
-                        text="Travel through the Island of Bali"
+                        text=""
                         label="Luxury"
                         path="/services"
                         />
                         <CardItem
                         src="/kennethswebsite/images/img-4.jpg"
-                        text="Travel through the Island of Bali"
+                        text=""
                         label="Luxury"
                         path="/services"
                         />
