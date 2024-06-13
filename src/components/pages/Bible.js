@@ -11,19 +11,19 @@ export default function Bible() {
                 <div className="cards__wrapper">
                     <ul className="cards__items">
                         <CardItem
-                        src="images/1Peter.jpeg"
+                        src="kennethswebsite/images/1Peter.jpeg"
                         text="1 Peter"
                         // label="Adventure"
                         path="/bible/1Peter"
                         />
                         <CardItem
-                        src="images/2Peter.jpeg"
+                        src="kennethswebsite/images/2Peter.jpeg"
                         text="2 Peter"
                         label="Luxury"
                         path="/bible/2Peter"
                         />
                         <CardItem
-                        src="images/micah.webp"
+                        src="kennethswebsite/images/micah.webp"
                         text="Micah"
                         label="Luxury"
                         path="/bible/Micah"

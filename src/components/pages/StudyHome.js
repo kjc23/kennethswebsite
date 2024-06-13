@@ -26,7 +26,7 @@ export default function StudyHome(props) {
                         if (study.book == props.name){
                             return (
                                     <li key={index}>
-                                        <a href={`/studies/${study.fileName}.html`}>
+                                        <a href={`kennethswebsite//studies/${study.fileName}.html`}>
                                             <div className="study-title">
                                                 {study.name}
                                             </div>
