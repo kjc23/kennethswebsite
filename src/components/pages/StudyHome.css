@@ -1,0 +1,42 @@
+/* StudyHome.css */
+
+.studies-list-container {
+    padding: 20px;
+    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+    /* border-radius: 8px; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .studies-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .studies-list li {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #ffffff;
+    border-radius: 4px;
+    background-color: #393939;
+
+    transition: background-color 0.3s ease;
+  }
+  
+  .studies-list li a {
+    text-decoration: none;
+    color: #393939;
+    font-weight: bold;
+  }
+  
+  .studies-list li:hover {
+    background-color: #4f4c4c;
+  }
+  
+  .study-title {
+    margin-bottom: 0px;
+    font-size: 18px;
+  }
+  

@@ -1,0 +1,679 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>2 Peter 1:1-11</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="5258f4b4-7b05-461d-acc8-15dd588da80a" class="page sans"><header><h1 class="page-title">2 Peter 1:1-11</h1><p class="page-description"></p></header><div class="page-body"><p id="5ef0ada7-4e99-4052-b95e-536f61a4529e" class=""><time>@April 4, 2024</time> </p><figure id="c145adda-4faa-47a1-b1c5-33286c3d4442" class="link-to-page"><a href="https://www.notion.so/Passage-c145adda4faa47a1b1c533286c3d4442?pvs=21">Passage</a></figure><p id="35efe59b-585c-4793-9aee-e3b9984fee3e" class=""><strong>Theme: </strong>The Lord’s divine power has given us everything we need to live a Godly life THROUGH Him.</p><p id="858ca5d6-547c-482c-8159-2fc79f6c4b46" class=""><strong>Aim:  </strong>Choose each day to remember the promises and power of God so that you may strengthen your faith and live a Godly life</p><h3 id="1c2e86e3-8459-42d5-a5ba-d38822fe1412" class="">Overview Questions</h3><hr id="facddded-c5af-4089-a625-7f16e0e38b4d"/><p id="d22e969d-2e99-482b-b2cc-cff3ea3acb56" class=""><em>Start by reading all of 2 Peter.</em></p><ol type="1" id="658b207a-5347-4517-8aa9-47a296ee4370" class="numbered-list" start="1"><li><mark class="highlight-red">What is happening in 2 Peter? Why did Peter write this letter?</mark><ul id="6ae559d3-c1fb-47a9-a070-aa22eaa75e8b" class="bulleted-list"><li style="list-style-type:disc"><em>Warn readers about false teachers / prophets</em></li></ul><ul id="c86589ff-cea8-4990-b378-1562df01b1c2" class="bulleted-list"><li style="list-style-type:disc"><em>Ensure readers that the Lord has given them all they need to live out a Godly life</em></li></ul><ul id="ccd51474-39b5-40a1-bf8d-f27741b89798" class="bulleted-list"><li style="list-style-type:disc"><em>“I am stirring up your sincere mind by way of reminder” (3v1)</em></li></ul></li></ol><ol type="1" id="d03e5428-5512-42fa-abaf-fcb0649849cd" class="numbered-list" start="2"><li><mark class="highlight-red">What are some of the major themes that we see in these three chapters?</mark><p id="6f7fe0b2-b26d-41f3-8efa-cde0a694f957" class=""><em>Similar to previous question, might skip</em></p><ul id="0592ac3f-15a2-46cd-9624-172b4d723651" class="bulleted-list"><li style="list-style-type:disc"><em>Knowledge of God</em></li></ul><ul id="61148a5c-3228-46db-b5ba-fc9235cdf5fa" class="bulleted-list"><li style="list-style-type:disc"><em>Be careful not to be led astray by false teaching</em></li></ul><ul id="9f9fd995-1eea-4745-afdd-c83f7e9617dc" class="bulleted-list"><li style="list-style-type:disc"><em>Continue to grow in the faith by the knowledge and grace of God</em></li></ul></li></ol><h3 id="ff7279ed-efa5-427b-af71-299d6e48d79c" class="">Greeting (v1-2)</h3><hr id="978b4502-3543-4c18-abbe-a7c0f9e71f34"/><p id="b145b98d-7476-4b87-9c8c-3239725da9ac" class=""><em>Quick section</em></p><ol type="1" id="9e29af27-d2a3-4d31-a6b3-ea78d0faadf5" class="numbered-list" start="3"><li><mark class="highlight-red">What do we learn about our faith in these two opening verses?</mark><ul id="20be54f5-88dd-4588-b017-747a82e05f6f" class="bulleted-list"><li style="list-style-type:disc"><em>Our faith is on equal standing (NIV: just as precious) as the faith of the apostles.</em></li></ul></li></ol><ol type="1" id="e1264d87-b1d2-4cd1-a3c3-33e4f57587e8" class="numbered-list" start="4"><li><mark class="highlight-red">Why would Peter want to emphasize this at the beginning of his letter?</mark><ul id="5e163dd9-4a0d-4e40-9daa-0831894388f9" class="bulleted-list"><li style="list-style-type:disc"><em>Even though Peter was an eye witness of Jesus’s life, the faith that they all share is the same faith</em></li></ul><ul id="cf3fb536-11cf-49e9-a3e0-dbfbe451e46a" class="bulleted-list"><li style="list-style-type:disc"><em>Peter is not above them in any way because the faith that we have all received is not of our own doing, it is from God.</em></li></ul></li></ol><h3 id="7da9e4b7-9abd-4966-9266-4a9a2da8286b" class="">Through God’s Divine Power… (v3-4)</h3><hr id="7a321d7f-3f25-48ec-bc14-4198d7824b7c"/><ol type="1" id="a0118a7d-d62a-4b67-a0b8-7c752a0e704b" class="numbered-list" start="5"><li><mark class="highlight-red">What has God given us?</mark><ul id="3f168dd2-6a6a-4230-95a2-1242635647df" class="bulleted-list"><li style="list-style-type:disc"><em>“Everything we need for a godly life” (v3)</em></li></ul><ul id="36fa6667-dbd4-437c-b295-186f76492dc5" class="bulleted-list"><li style="list-style-type:disc"><em>“Very great and precious promises” (v4)</em></li></ul><ul id="8b86f4e3-554a-4940-b8ab-ad990d601a6e" class="bulleted-list"><li style="list-style-type:disc"><em>Helped us escape “the corruption in the world caused by evil desires” (v4)</em></li></ul></li></ol><ol type="1" id="92e230e6-4cb8-453b-8fda-813ef2fdfd66" class="numbered-list" start="6"><li><mark class="highlight-red">What does it mean to partake in the Divine Nature?</mark><ul id="d4d38a5d-ba23-4b58-9e96-6e7cced01a73" class="bulleted-list"><li style="list-style-type:disc"><em>We have been invited by God to become His sons and daughters</em></li></ul><ul id="d46359bd-138f-4b87-bcea-35dcde858244" class="bulleted-list"><li style="list-style-type:disc"><em>Not only did He wash us of our sins, He also invites us into a relationship with Him.</em></li></ul><ul id="07bcd7c0-70f2-472b-8921-14b194457afb" class="bulleted-list"><li style="list-style-type:disc"> ”to redeem those under the law, that we might receive adoption to sonship. Because you are his sons, God sent the Spirit of his Son into our hearts, the Spirit who calls out, <em>“Abba</em>, Father.” So you are no longer a slave, but God’s child; and since you are his child, God has made you also an heir.” -<em>Galatians 4:5-7</em></li></ul></li></ol><ol type="1" id="2b5a32da-27bb-4eaf-a74c-ab11713532df" class="numbered-list" start="7"><li><mark class="highlight-red">Why does Peter keep emphasizing our </mark><strong><mark class="highlight-red">knowledge of God</mark></strong><mark class="highlight-red">? </mark><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="cefb59f7-52ba-4c14-81fd-27a70f5f44a6"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">The Greek word for <strong>knowledge</strong> is similar to how we would understand the word knowledge (somewhat detached / sort of rote memorization) however, Peter seems to use it in a more Hebrew sense of the word meaning a knowledge of someone / something that comes from an intimate and close relationship.</div></figure><ul id="683d63c1-7fa8-4784-b381-f68d58eb25bb" class="bulleted-list"><li style="list-style-type:disc"><em>It is through our knowledge of God and Him revealing Himself to us that we can come into deeper relationship with Him.</em></li></ul></li></ol><h3 id="4a4c9005-500f-476d-bbae-e5871638dda8" class="">Our Response (v5-11)</h3><hr id="663b5728-9c74-4c7b-abd2-0cbd389adc65"/><ol type="1" id="4c710bfa-c1db-4f66-ae18-57f679ff1288" class="numbered-list" start="8"><li><mark class="highlight-red">Which qualities in this list do we find most difficult?</mark><p id="f50b0d73-f4b2-4405-852b-1cdc83d10cfb" class=""><em>Discuss.</em></p></li></ol><ol type="1" id="89244672-5841-4053-9caa-a56426797bc0" class="numbered-list" start="8"><li><mark class="highlight-red">What does it mean to be effective and productive in our knowledge of the Lord?</mark><ul id="43ac75a5-1d0f-405a-bac3-817ff7254cf0" class="bulleted-list"><li style="list-style-type:disc"><em>Always learning and being taught from God and His word</em></li></ul><ul id="c922d240-163a-49bb-85aa-12088d5dbb54" class="bulleted-list"><li style="list-style-type:disc"><em>Being sanctified to be more like Jesus</em></li></ul></li></ol><ol type="1" id="7d81a6db-0630-4479-96d5-049aac1b3825" class="numbered-list" start="9"><li><mark class="highlight-red">Why does Peter emphasize that these qualities should be “increasing”?</mark><ul id="e76cfaa8-36b2-47eb-ae4f-66ead8d90073" class="bulleted-list"><li style="list-style-type:disc"><em>If these qualities are not increasing, our faith has become stagnant</em></li></ul></li></ol><ol type="1" id="0e5c2910-cb01-46b8-ae38-f59be49eebb9" class="numbered-list" start="10"><li><mark class="highlight-yellow">Draw a picture of what it looks like to be effective and productive in our faith (using the list of qualities in verses 5-7).</mark></li></ol><ol type="1" id="017bd1a5-efe4-4b2f-83ee-34b43b0cc23f" class="numbered-list" start="11"><li><mark class="highlight-red">How are these qualities grown and increased?</mark><ul id="cba93ab9-8bca-421d-8865-6a330365b9c2" class="bulleted-list"><li style="list-style-type:disc"><em>Through trusting in the Lord and continuing in our faith the Holy Spirit sanctifies us and makes us more and more like Jesus.</em></li></ul></li></ol><ol type="1" id="c1f20744-ca58-4be9-81f3-211b528bde5a" class="numbered-list" start="12"><li><mark class="highlight-red">What are the big ideas that Peter wants us to take away from this passage?</mark><ul id="de1fe613-5cf9-403a-a2c9-d481c723838e" class="bulleted-list"><li style="list-style-type:disc"><em>We all share in the same faith, nobody’s faith is better or more precious than another’s</em></li></ul><ul id="b7523eab-adb6-4085-a72f-4000ea6653cb" class="bulleted-list"><li style="list-style-type:disc"><em>It is not by our own doing that we partake in this faith, it is through God that we were brought to believe</em></li></ul><ul id="d09f14a4-ae7c-4312-be17-969335fb103c" class="bulleted-list"><li style="list-style-type:disc"><em>We have been given everything we need to live a godly life</em></li></ul><ul id="56e956d2-a3af-414b-91e7-f087b4a97de9" class="bulleted-list"><li style="list-style-type:disc"><em>We have been brought out of the corruption of the world</em></li></ul><ul id="7db6bb84-956c-4c30-9450-9178fadbc0f6" class="bulleted-list"><li style="list-style-type:disc"><em>Because of all that God has done for us, we should make every effort to continue to live a godly life in increasing measure</em></li></ul><ul id="d442aacb-8ec1-4523-a5fa-7b0bfd30e080" class="bulleted-list"><li style="list-style-type:disc"><em>v10-11</em><ul id="10ed4ccf-0fea-4a0f-8fc7-91bec032ad52" class="bulleted-list"><li style="list-style-type:circle"><em>Confirm your calling and election</em></li></ul><ul id="3d011dcb-9331-414a-82f6-c0b9863b1f26" class="bulleted-list"><li style="list-style-type:circle"><em>If we do so, we will not stumble</em></li></ul><ul id="2106139c-4288-4dfb-8c43-175cb590e52c" class="bulleted-list"><li style="list-style-type:circle"><em>We will receive a rich welcome into the Lord’s eternal Kingdom</em></li></ul></li></ul></li></ol><h3 id="d2e7a910-8b67-4c68-99ee-66b02c794c52" class="">Wrap up Questions</h3><hr id="73d0cd91-6754-4250-8459-5ac89240137d"/><ol type="1" id="99288738-76d6-44fb-a9ec-e1815d68d97f" class="numbered-list" start="14"><li><mark class="highlight-red">How has this passage made us more grateful to God?</mark></li></ol><ol type="1" id="ee4f8507-ea4d-45dc-890c-789defaea24b" class="numbered-list" start="15"><li><mark class="highlight-red">How has this passage increased our love of God?</mark></li></ol><p id="a8bd348d-dec9-448a-8de4-29eba6574d71" class="">
+</p><p id="a9c7c8a2-ea34-4726-98e1-19139ae95120" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
