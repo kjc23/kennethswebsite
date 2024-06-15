@@ -25,6 +25,8 @@ export default function Album(props) {
                         <button id="mute-icon"></button>
                     </div> */}
                     <Song name="Open D" file="/kennethswebsite/music/Open D Aug 14 2023.mp3" />
+                    <Song name="Alle Zeit der Welt" file="/kennethswebsite/music/Alle die Zeit in der Welt (new).m4a" />
+                    <Song name="Interlude" file="/kennethswebsite/music/Interlude 6_8_22.mp3" />
                     <Song name="Orion" file="/kennethswebsite/music/OrionTEST.mp3" />
                     <Song name="A Waltz in a Cornfield" file="/kennethswebsite/music/A Waltz in a Cornfield.mp3" />
                 </ul>
