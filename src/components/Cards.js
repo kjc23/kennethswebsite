@@ -29,18 +29,6 @@ export default function Cards() {
                         label="Adventure"
                         path="/services"
                         />
-                        <CardItem
-                        src="/kennethswebsite/images/img-3.jpg"
-                        text=""
-                        label="Luxury"
-                        path="/services"
-                        />
-                        <CardItem
-                        src="/kennethswebsite/images/img-4.jpg"
-                        text=""
-                        label="Luxury"
-                        path="/services"
-                        />
                     </ul>
                 </div>
             </div>
