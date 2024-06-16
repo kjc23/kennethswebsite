@@ -10,17 +10,31 @@
 .song-name {
     float: left;
     padding: 1rem 2rem 0 0;
-    width: 200px;
+    width: 250px;
     text-overflow: hidden;
     white-space: nowrap;
     position: relative;
+}
+
+.song-audio {
+    float: right;
+    width: 75%;
 
 }
 
-h2:hover {
-    animation: scroll-text 3s linear infinite;
-    overflow: visible;
+.picture-container {
+    width: 50px;
+    height: 50px;
+    left: -20px;
+    top: 20px;
+    background-color: rgb(154, 153, 153);
+    padding: 1rem;
+    position: relative;
 }
+
+audio::-webkit-media-controls-panel {
+    background-color: rgb(247, 218, 206);
+  }
 
 @keyframes scroll-text {
     0% {
