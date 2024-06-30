@@ -9,7 +9,7 @@ export default function Album(props) {
 
     return (
         <div>
-            <AlbumHeader name={props.name} description="DESCRIPTION" src="kennethswebsite/images/albums/Judson(edited).jpg"/>
+            <AlbumHeader name={props.name} description="DESCRIPTION" src="/kennethswebsite/images/albums/Judson(edited).jpg"/>
             <div className="songs-container">
                 <hr className="thin-line" />
                 <ul className="songs-container ul">
