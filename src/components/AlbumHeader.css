@@ -1,0 +1,25 @@
+.album-header-container {
+    height: 23rem;
+}
+
+.album-header-photo {
+    width: 25rem;
+    height: 25rem;
+    position: relative;
+    float: left;
+    border-radius: 40px;
+    padding: 2rem 2rem 2rem 2rem;
+}
+
+.album-header-words {
+    float: left;
+    padding: 14rem 2rem 0 1rem;
+}
+
+.album-header-title {
+    font-size: 64px;
+}
+
+.album-header-description {
+    padding-top: 2rem;
+}

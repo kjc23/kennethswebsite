@@ -3,13 +3,15 @@ import "../../App.css";
 import Footer from "../Footer";
 import "./Album.css"
 import Song from "../Song";
+import AlbumHeader from "../AlbumHeader";
 
 export default function Album(props) {
 
     return (
         <div>
-            <h1 className="album">{props.name}</h1>
+            <AlbumHeader name={props.name} description="DESCRIPTION" src="kennethswebsite/images/albums/Judson(edited).jpg"/>
             <div className="songs-container">
+                <hr className="thin-line" />
                 <ul className="songs-container ul">
                     <Song name="Full Step Down" file="/kennethswebsite/music/fullstepdownFCAmC.mp3" />
                     <Song name="It's Okay" file="/kennethswebsite/music/It's Okay mastered.mp3" />
@@ -25,7 +27,7 @@ export default function Album(props) {
                         <button id="mute-icon"></button>
                     </div> */}
                     <Song name="Open D" file="/kennethswebsite/music/Open D Aug 14 2023.mp3" />
-                    <Song name="Alle Zeit der Welt" file="/kennethswebsite/music/Alle die Zeit in der Welt (new).m4a" />
+                    <Song name="Alle Zeit der Welt" file="/kennethswebsite/music/Alle die Zeit in der Welt (final).m4a" />
                     <Song name="Interlude" file="/kennethswebsite/music/Interlude 6_8_22.mp3" />
                     <Song name="Orion" file="/kennethswebsite/music/OrionTEST.mp3" />
                     <Song name="A Waltz in a Cornfield" file="/kennethswebsite/music/A Waltz in a Cornfield.mp3" />

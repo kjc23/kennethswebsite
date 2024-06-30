@@ -10,7 +10,7 @@
 .song-name {
     float: left;
     padding: 1rem 2rem 0 0;
-    width: 250px;
+    width: 15%;
     text-overflow: hidden;
     white-space: nowrap;
     position: relative;
@@ -19,7 +19,6 @@
 .song-audio {
     float: right;
     width: 75%;
-
 }
 
 .picture-container {
@@ -34,7 +33,7 @@
 
 audio::-webkit-media-controls-panel {
     background-color: rgb(247, 218, 206);
-  }
+}
 
 @keyframes scroll-text {
     0% {

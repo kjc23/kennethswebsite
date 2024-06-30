@@ -20,7 +20,7 @@ body {
 }
 
 .songs-container {
-    padding: 1em;
+    padding: 2em 1rem 1rem 1rem;
 }
 
 #audio-player-container {
