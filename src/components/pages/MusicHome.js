@@ -11,7 +11,7 @@ export default function MusicHome() {
                 <div className="cards__wrapper">
                     <ul className="cards__items">
                         <CardItem
-                        src="/kennethswebsite/images/albums/Judson(edited).JPG"
+                        src="/kennethswebsite/images/albums/Judson(edited).jpg"
                         text="Album 1"
                         label="St Andrews"
                         path="/music/Album1"
