@@ -190,3 +190,7 @@ body {
       transform: scale(1.2);
       background: #007db5;
   }
+
+  @media screen and (max-width: 750px) {
+
+}
