@@ -75,7 +75,7 @@
   display: none;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 750px) {
   .NavbarItems {
     position: relative;
   }
@@ -101,7 +101,6 @@
   }
 
   .nav-links {
-    
     text-align: center;
     padding: 2rem;
     width: 100%;
@@ -125,7 +124,7 @@
     display: block;
     position: absolute;
     top: 0;
-    right: 0;
+    left: 50px;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;

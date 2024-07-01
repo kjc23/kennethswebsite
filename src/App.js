@@ -6,6 +6,8 @@ import Bible from './components/pages/Bible';
 import Album from './components/pages/Album';
 import MusicHome from './components/pages/MusicHome';
 import StudyHome from './components/pages/StudyHome';
+import RecipesHome from './components/pages/RecipesHome';
+import Recipe from './components/pages/Recipe';
 
 function App() {
 
@@ -25,6 +27,8 @@ function App() {
         <Route path='/music/Album2' element={<Album name="Album 2" /> } />
         <Route path='/music/Album3' element={<Album name="Album 3" /> } />
         <Route path='/music/Album4' element={<Album name="Album 4" /> } />
+        <Route path='/recipes' Component={RecipesHome} />
+        <Route path='/recipes/gluten-free-bread' element={<Recipe title="Gluten Free Bread" src="/kennethswebsite/images/gfbread.jpg"/>} />
       </Routes>
      </Router>
     </>

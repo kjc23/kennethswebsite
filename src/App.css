@@ -9,7 +9,7 @@
 
 .home,
 .bible,
-.products,
+.recipes,
 .music {
   display: flex;
   background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
@@ -28,8 +28,8 @@
   font-size: 100px;
 }
 
-.products {
-  background-image: url('../public/images/img-1.jpg');
+.recipes {
+  background-image: url('../public/images/recipes.webp');
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
