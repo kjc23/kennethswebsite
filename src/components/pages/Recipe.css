@@ -51,6 +51,11 @@
     background-color: #393939;
     padding: 1rem 1rem 1rem 2rem;
     border-radius: 20px;
+    font-size: 20px;
+}
+
+.ingredient {
+    padding: .5rem;
 }
 
 .instructions-title {
@@ -66,4 +71,18 @@
     background-color: #393939;
     padding: 1rem 1rem 1rem 2rem;
     border-radius: 20px;
+    font-size: 20px;
+}
+
+.instruction {
+    padding: .5rem;
+}
+
+.credit {
+    color: #fff;
+    font-style: italic;
+}
+
+.credit-container {
+
 }

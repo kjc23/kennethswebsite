@@ -28,7 +28,8 @@ function App() {
         <Route path='/music/Album3' element={<Album name="Album 3" /> } />
         <Route path='/music/Album4' element={<Album name="Album 4" /> } />
         <Route path='/recipes' Component={RecipesHome} />
-        <Route path='/recipes/gluten-free-bread' element={<Recipe title="Gluten Free Bread" src="/kennethswebsite/images/gfbread.jpg"/>} />
+        <Route path='/recipes/gluten-free-bread' element={<Recipe title="Gluten Free Bread" src="/kennethswebsite/images/gfbread.jpg" data="gluten-free-bread.json" />} />
+        <Route path='/recipes/cabbage-potatoes-sausage' element={<Recipe title="Cabbage, Potatoes, and Sausage One Dish" src="/kennethswebsite/images/cabbage-potatoes-sausage.jpeg" data="cabbage-potatoes-sausage.json" />} />
       </Routes>
      </Router>
     </>

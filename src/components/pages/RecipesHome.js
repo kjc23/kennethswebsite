@@ -20,6 +20,11 @@ export default function RecipesHome(props) {
                         label="St Andrews"
                         path="/recipes/gluten-free-bread"
                         />
+                        <CardItem
+                        src="/kennethswebsite/images/cabbage-potatoes-sausage.jpeg"
+                        text="Cabbage, Potatoes, and Sausage One Dish"
+                        path="/recipes/cabbage-potatoes-sausage"
+                        />
 
                     </ul>
                     {/* <ul className="cards__items">

@@ -27,7 +27,7 @@ export default function Cards() {
                         src="/kennethswebsite/images/recipes.webp"
                         text="Recipes"
                         label="Adventure"
-                        path="/services"
+                        path="/recipes"
                         />
                     </ul>
                 </div>

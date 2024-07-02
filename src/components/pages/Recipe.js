@@ -4,13 +4,11 @@ import Footer from "../Footer";
 import "./Recipe.css"
 
 export default function Recipe(props) {
-    var data = require('../../recipes/glutenfree-bread.json');
+    var data = require('../../recipes/' + props.data);
     var preamble = data.preamble;
     var ingredients = data.ingredients;
     var instructions = data.instructions;
-
-    console.log(data);
-
+    var credit = data.credit;
 
     return (
         <div>
@@ -22,19 +20,19 @@ export default function Recipe(props) {
                 <div className="preamble-container">
                 { preamble !== null && 
                     <div className="preamble">
-                        { preamble["Prep Time"] !== null &&
+                        { preamble["Prep Time"] != null &&
                             <h2 className="prep-time">Prep Time: {preamble["Prep Time"]}</h2>
                         }
 
-                        { preamble["Proving Time"] !== null &&
+                        { preamble["Proving Time"] != null &&
                             <h2 className="prove-time">Prove Time: {preamble["Proving Time"]}</h2>
                         }
 
-                        { preamble["Cook Time"] !== null &&
+                        { preamble["Cook Time"] != null &&
                             <h2 className="cook-time">Cook Time: {preamble["Cook Time"]}</h2>
                         }
 
-                        { preamble["Total Time"] !== null &&
+                        { preamble["Total Time"] != null &&
                             <h2 className="total-time">Total Time: {data.preamble["Total Time"]}</h2>
                         }
                     </div>
@@ -51,6 +49,9 @@ export default function Recipe(props) {
                         <h1 className="instructions-title">Instructions</h1>
                         { instructions.map(instruction => (<li className="instruction {instruction}">{instruction}</li>)) }
                     </ol>
+                </div>
+                <div className="credit-container">
+                    <pre className="credit">Credit: {credit}</pre>
                 </div>
                 {/* <hr className="thin-line" /> */}
 
