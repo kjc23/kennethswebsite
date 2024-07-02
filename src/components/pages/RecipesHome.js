@@ -16,7 +16,7 @@ export default function RecipesHome(props) {
                     <ul className="cards__items">
                         <CardItem
                         src="/kennethswebsite/images/gfbread.jpg"
-                        text="Album 1"
+                        text="Gluten Free Bread"
                         label="St Andrews"
                         path="/recipes/gluten-free-bread"
                         />
