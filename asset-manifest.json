@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/kennethswebsite/static/css/main.ef145fe7.css",
-    "main.js": "/kennethswebsite/static/js/main.6551c12f.js",
+    "main.css": "/kennethswebsite/static/css/main.5351135d.css",
+    "main.js": "/kennethswebsite/static/js/main.16b26d49.js",
     "static/js/453.bb828c5d.chunk.js": "/kennethswebsite/static/js/453.bb828c5d.chunk.js",
     "static/media/img-home.jpg": "/kennethswebsite/static/media/img-home.c034239ee9a63564602b.jpg",
     "static/media/recipes.webp": "/kennethswebsite/static/media/recipes.8de9b64ca68f96834639.webp",
     "static/media/bible2.jpeg": "/kennethswebsite/static/media/bible2.4eee9621915b2d799453.jpeg",
     "static/media/music.webp": "/kennethswebsite/static/media/music.7bda7e81677f30a447f1.webp",
     "index.html": "/kennethswebsite/index.html",
-    "main.ef145fe7.css.map": "/kennethswebsite/static/css/main.ef145fe7.css.map",
-    "main.6551c12f.js.map": "/kennethswebsite/static/js/main.6551c12f.js.map",
+    "main.5351135d.css.map": "/kennethswebsite/static/css/main.5351135d.css.map",
+    "main.16b26d49.js.map": "/kennethswebsite/static/js/main.16b26d49.js.map",
     "453.bb828c5d.chunk.js.map": "/kennethswebsite/static/js/453.bb828c5d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef145fe7.css",
-    "static/js/main.6551c12f.js"
+    "static/css/main.5351135d.css",
+    "static/js/main.16b26d49.js"
   ]
 }
