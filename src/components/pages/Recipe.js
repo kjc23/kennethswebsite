@@ -6,6 +6,7 @@ import "./Recipe.css"
 export default function Recipe(props) {
     var data = require('../../recipes/' + props.data);
     var preamble = data.preamble;
+    var sections = data.sections;
     var ingredients = data.ingredients;
     var instructions = data.instructions;
     var credit = data.credit;
@@ -38,17 +39,26 @@ export default function Recipe(props) {
                     </div>
                 }
                 </div>
-                <div className="ingredients">
-                    <ul className="ingredients-list">
-                        <h1 className="ingredients-title">Ingredients</h1>
-                        { ingredients.map(ingredient => (<li className="ingredient {ingredient}">{ingredient}</li>)) }
-                    </ul>
-                </div>
-                <div className="instructions">
-                    <ol className="instructions-list">
-                        <h1 className="instructions-title">Instructions</h1>
-                        { instructions.map(instruction => (<li className="instruction {instruction}">{instruction}</li>)) }
-                    </ol>
+                <div className="secitions-container">
+                    { sections.map(section => {
+                        return (
+                            <div className="section {section}">
+                                <div className="ingredients">
+                                    <ul className="ingredients-list">
+                                        <h1 className="ingredients-title">Ingredients</h1>
+                                        { section.ingredients.map(ingredient => (<li className="ingredient {ingredient}">{ingredient}</li>)) }
+                                    </ul>
+                                </div>
+                                <div className="instructions">
+                                    <ol className="instructions-list">
+                                        <h1 className="instructions-title">Instructions</h1>
+                                        { section.instructions.map(instruction => (<li className="instruction {instruction}">{instruction}</li>)) }
+                                    </ol>
+                                </div>
+                            </div>
+                        )
+                    }) }
+
                 </div>
                 <div className="credit-container">
                     <pre className="credit">Credit: {credit}</pre>
