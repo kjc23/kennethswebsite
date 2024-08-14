@@ -1,29 +1,51 @@
 {
     "preamble": {
-        "Prep Time": "15 minutes",
-        "Cook Time": "30 minutes",
-        "Proving Time": "30 minutes",
-        "Total Time": "1 hour 45 minutes"
+        "Prep Time": "1 hour",
+        "Cook Time": "10 minutes",
+        "Total Time": "1 hour 10 minutes"
     },
-    "ingredients": [
-        "400g Gluten free flour",
-        "1 tsp Xanthum gum",
-        "300ml Warm water",
-        "2 tbsp Caster sugar",
-        "14g Dried yeast",
-        "1 tsp Salt",
-        "1 tsp Apple cider vinegar",
-        "5 tbsp Vegetable oil",
-        "2 Eggs"
-    ],
-    "instructions": [
-        "Measure out the warm water into a jug - it should be at skin temperature - i.e. you can't really feel the heat when you dip your finger in. Stir the sugar into the warm water and until dissolved, then add the yeast and stir again. Leave in a warm spot for 5-10 minutes for the yeast to activate. It should form a lovely froth on top when it's ready.",
-        "Add the gluten free bread flour, xanthan gum and salt to a large mixing bowl and stir to mix together.",
-        "In a separate mug or bowl, add the eggs, oil and vinegar and lightly whisk to combine.",
-        "Once the yeast/water mixture is active (frothy), add it to the flour along with the egg/oil mixture. Using a wooden spoon, beat the mixture together vigorously to combine it into a thick, sticky dough.",
-        "Oil a 2lb loaf tin then pour the dough into it. You may need to use oiled fingers to scrape out the dough as it can be quite sticky, and to gently smooth down the top of the dough in the tin so it's even. Loosely cover the tin with oiled clingfilm and leave in a warm spot to prove. It will take about 25-30 minutes and should rise to the top of the tin.",
-        "Preheat the oven to 200'C (Fan 180'C / Gas 6). Once the dough has risen to the top of the tin, remove the clingfilm and place in the centre of the oven. Bake for 55-60 minutes until it is risen and golden (tip - if the top of loaf starts to catch then place some foil over it). You'll know the bread is done if you tip it out of the tin and tap on each surface - it should sound hard and hollow.",
-        "Leave the loaf to cool in the tin on a cooling rack for at least 30 minutes before cutting into it. Slice up and enjoy while warm and fresh."
-    ],
+    "sections": {
+        "cream topping": {
+            "ingredients": [
+                "1 cup heavy cream",
+                "3 tbsp powdered sugar",
+                "1/2 cup of spent coffee grounds"
+            ],
+            "instructions": [
+                "For the whipped topping: Combine 1/2 cup coffee grounds and 1 cup heavy cream in a container with a lid (like a glass jar) and refrigerate to infuse the flavor—2 hours if you're impatient, or up to 12 if you've got time to burn.",
+                "Strain the cream, using cheesecloth or a super-fine mesh sieve, and discard the grounds. Add the powdered sugar to the cream, whip until soft peaks form, and refrigerate until needed."            ]
+        },
+        "crust": {
+            "ingredients": [
+                "2 cups crushed chocolate cookies",
+                "4 tablespoons unsalted butter, melted",
+                "1/4 cup spent coffee grounds"
+            ],
+            "instructions": [
+                "For the crust: Heat the oven to 375° F.",
+                "In a medium bowl, mix together the crushed cookie crumbs and the remaining 1/4 cup coffee grounds, then drizzle in the melted butter and stir to coat everything in butter (it might not clump at all, that's okay!).",
+                "Dump the buttery crumbs into the pie plate and press to form an even crust. (I like to use a measuring cup to do this, but fingers work, too). Place the pie plate in the freezer while you wait for the oven to finish heating up.",
+                "Bake the crust for 10 minutes, then set aside to cool."
+            ]
+        },
+        "filling": {
+            "ingredients": [
+                "½ cup heavy cream",
+                "5 ounces semi-sweet chocolate",
+                "12 tablespoons (1 1/2 sticks) unsalted butter, softened",
+                "¾ cup granulated sugar",
+                "1 teaspoon vanilla extract",
+                "4 large eggs"
+            ],
+            "instructions": [
+                "For the filling: Whip the 1/2 cup heavy cream until soft peaks form, then cover and refrigerate the whipped cream until needed.",
+                "Melt the chocolate in a microwave or with a double boiler, and set aside to cool slightly.",
+                "Add the butter and sugar to the bowl of a stand mixer fitted with the whisk attachment, and cream until light and fluffy, about 3 minutes.",
+                "Add in the cooled chocolate and vanilla and whisk again until combined.",
+                "Add the eggs, one at a time, beating for 5 minutes after each addition, and then fold in the reserved plain whipped cream.",
+                "Pour the filling into cooled crust, spread it out, then top with the coffee-flavored whipped cream. Refrigerate to set, at least 2 hours or overnight"
+            ]
+        }
+    },
     "credit": "Kenneth Cain"
 }

@@ -1,0 +1,37 @@
+{
+    "preamble": {
+        "Prep Time": "10 mins",
+        "Cook Time": "15 minutes",
+        "Total Time": "25 minutes"
+    },
+    "sections": {
+        "meal": {
+            "ingredients": [
+                "1 1/2 pounds boneless skinless chicken thighs cut into 1 inch pieces",
+                "salt and pepper to taste",
+                "1/3 cup low sodium soy sauce",
+                "1/2 cup water",
+                "3 tablespoons brown sugar",
+                "2 teaspoons minced garlic",
+                "2 teaspoons minced ginger",
+                "1 tablespoon honey",
+                "1 teaspoon toasted sesame oil",
+                "1 1/2 tablespoons corn starch",
+                "2 teaspoons sesame seeds",
+                "2 tablespoons sliced green onions"
+            ],
+            "instructions": [
+                "Season the chicken pieces with salt and pepper to taste.",
+                "Place the soy sauce, water, brown sugar, garlic, ginger, honey and sesame oil in an Instant Pot. Stir to combine.",
+                "Place the chicken in the Instant Pot and stir to coat it with the sauce.",
+                "Seal the Instant Pot and set it for high manual pressure for 8 minutes.",
+                "Let the pressure release naturally for 5 minutes, then manually release the rest of the pressure.",
+                "Use a slotted spoon to remove the chicken from the pot. Place on a plate and cover to keep warm.",
+                "Turn the pot to saute mode. Whisk together 2 tablespoon of cold water with the corn starch.",
+                "Once the sauce comes to a simmer, whisk in the corn starch. Cook for 1 minute or until sauce has started to thicken.",
+                "Turn off the Instant Pot. Return the chicken to the pot. Spoon the sauce over the top. Sprinkle with sesame seeds and green onions, then serve."
+            ]
+        }
+    },
+    "credit": "https://www.dinneratthezoo.com/instant-pot-teriyaki-chicken/"
+}

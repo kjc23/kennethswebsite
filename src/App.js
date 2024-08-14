@@ -30,6 +30,8 @@ function App() {
         <Route path='/recipes' Component={RecipesHome} />
         <Route path='/recipes/gluten-free-bread' element={<Recipe title="Gluten Free Bread" src="/kennethswebsite/images/gfbread.jpg" data="gluten-free-bread.json" />} />
         <Route path='/recipes/cabbage-potatoes-sausage' element={<Recipe title="Cabbage, Potatoes, and Sausage One Dish" src="/kennethswebsite/images/cabbage-potatoes-sausage.jpeg" data="cabbage-potatoes-sausage.json" />} />
+        <Route path='/recipes/chocolate-coffee-silk-pie' element={<Recipe title="Chocolate-Coffee Silk Pie" src="/kennethswebsite/images/choccoffpie.webp" data="chocolate-coffee-silk-pie.json" />} />
+        <Route path='/recipes/instantpot-teriyaki-chicken' element={<Recipe title="Intant Pot Teriyaki Chicken" src="/kennethswebsite/images/teriyaki-chicken.webp" data="teriyaki-chicken.json" />} />
       </Routes>
      </Router>
     </>

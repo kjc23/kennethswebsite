@@ -40,18 +40,20 @@ export default function Recipe(props) {
                 }
                 </div>
                 <div className="secitions-container">
-                    { sections.map(section => {
+                    { Object.values(sections).map((section, index) => {
+                        var keys = Object.keys(sections)
+
                         return (
                             <div className="section {section}">
                                 <div className="ingredients">
                                     <ul className="ingredients-list">
-                                        <h1 className="ingredients-title">Ingredients</h1>
+                                        <h1 className="ingredients-title">Ingredients: {keys[index]}</h1>
                                         { section.ingredients.map(ingredient => (<li className="ingredient {ingredient}">{ingredient}</li>)) }
                                     </ul>
                                 </div>
                                 <div className="instructions">
                                     <ol className="instructions-list">
-                                        <h1 className="instructions-title">Instructions</h1>
+                                        <h1 className="instructions-title">Instructions: {keys[index]}</h1>
                                         { section.instructions.map(instruction => (<li className="instruction {instruction}">{instruction}</li>)) }
                                     </ol>
                                 </div>

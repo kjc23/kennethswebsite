@@ -25,7 +25,18 @@ export default function RecipesHome(props) {
                         text="Cabbage, Potatoes, and Sausage One Dish"
                         path="/recipes/cabbage-potatoes-sausage"
                         />
-
+                        <CardItem
+                        src="/kennethswebsite/images/choccoffpie.webp"
+                        text="Chocolate-Coffee Silk Pie"
+                        path="/recipes/chocolate-coffee-silk-pie"
+                        />
+                    </ul>
+                    <ul>
+                        <CardItem
+                        src="/kennethswebsite/images/teriyaki-chicken.webp"
+                        text="Instant Pot Teriyaki Chicken"
+                        path="/recipes/instantpot-teriyaki-chicken"
+                        />
                     </ul>
                     {/* <ul className="cards__items">
                     </ul> */}

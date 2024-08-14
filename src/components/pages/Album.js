@@ -15,6 +15,7 @@ export default function Album(props) {
                 <ul className="songs-container ul">
                     <Song name="Full Step Down" file="/kennethswebsite/music/fullstepdownFCAmC.mp3" />
                     <Song name="It's Okay" file="/kennethswebsite/music/It's Okay mastered.mp3" />
+                    <Song name="Eve" file="/kennethswebsite/music/Eve.mp3" />
                     {/* <div id="audio-player-container">
                         <audio src={audioFilePath} preload="metadata" loop></audio>
                         <p>Full Step Down</p>
