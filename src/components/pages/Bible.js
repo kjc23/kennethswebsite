@@ -28,6 +28,11 @@ export default function Bible() {
                         label="Luxury"
                         path="/bible/Micah"
                         />
+                        <CardItem
+                        src="kennethswebsite/images/mark.jpg"
+                        text="Mark"
+                        path="/bible/Mark"
+                        />
                     </ul>
                 </div>
             </div>

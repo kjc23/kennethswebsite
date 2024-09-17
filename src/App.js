@@ -22,6 +22,7 @@ function App() {
         <Route path='/bible/1Peter' element={<StudyHome name="1 Peter" />} />
         <Route path='/bible/2Peter' element={<StudyHome name="2 Peter" />} />
         <Route path='/bible/Micah' element={<StudyHome name="Micah" />} />
+        <Route path='/bible/Mark' element={<StudyHome name="Mark" />} />
         <Route path='/music' Component={MusicHome} />
         <Route path='/music/Album1' element={<Album name="Album 1" /> } />
         <Route path='/music/Album2' element={<Album name="Album 2" /> } />
