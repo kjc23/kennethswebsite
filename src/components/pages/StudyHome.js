@@ -14,7 +14,9 @@ export default function StudyHome(props) {
         { name: "2 Peter 2", fileName: "2 Peter 2", book: "2 Peter" },
         { name: "Micah 2", fileName: "Micah 2", book: "Micah" },
         { name: "Micah 4", fileName: "Micah 4", book: "Micah" },
-        { name: "Micah 6", fileName: "Micah 6", book: "Micah" }
+        { name: "Micah 6", fileName: "Micah 6", book: "Micah" },
+        { name: "Mark 1:16-39", fileName: "Mark 1 16-39", book: "Mark"},
+        { name: "Mark 2:18-3:35", fileName: "Mark218-335", book: "Mark"}
     ];
 
     return (
