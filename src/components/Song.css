@@ -55,6 +55,10 @@ h2 {
     margin-left: 1rem;
 }
 
+a {
+    text-decoration: none;
+}
+
 @media screen and (max-width: 750px) {
     .song-container {
         font-size: 3vw;

@@ -1,5 +1,5 @@
 .cards {
-    padding: 5rem 0 5rem 0;
+    padding: 0rem 0 5rem 0;
     background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
   }
   
@@ -20,7 +20,7 @@
   
   .cards__wrapper {
     position: relative;
-    margin: 50px 0 45px;
+    margin: 50px 0 0px;
   }
   
   .cards__items {

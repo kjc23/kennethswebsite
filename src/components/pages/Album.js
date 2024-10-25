@@ -13,7 +13,7 @@ export default function Album(props) {
             <div className="songs-container">
                 <hr className="thin-line" />
                 <ul className="songs-container ul">
-                    <Song name="Full Step Down" file="/kennethswebsite/music/fullstepdownFCAmC.mp3" />
+                    <Song name="Hiatus" file="/kennethswebsite/music/fullstepdownFCAmC.mp3" />
                     <Song name="It's Okay" file="/kennethswebsite/music/It's Okay mastered.mp3" />
                     <Song name="Eve" file="/kennethswebsite/music/Eve.mp3" />
                     {/* <div id="audio-player-container">
