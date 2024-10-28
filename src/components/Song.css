@@ -8,6 +8,11 @@
     font-size: 1vw;
 }
 
+.highlight {
+    background-color: rgb(234, 174, 135);
+    transition: background-color 0.5s ease; /* Smooth transition */
+}
+
 .song-name {
     float: left;
     padding: 1rem 2rem 0 0;

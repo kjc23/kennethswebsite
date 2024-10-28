@@ -1,3 +1,5 @@
+import { useRef, useEffect } from "react";
+import { useLocation } from 'react-router-dom';
 import React from "react";
 import "../../App.css";
 import Footer from "../Footer";
@@ -6,6 +8,7 @@ import Song from "../Song";
 import AlbumHeader from "../AlbumHeader";
 
 export default function Album(props) {
+
 
     return (
         <div>

@@ -44,7 +44,7 @@ export default function RecipesHome(props) {
                         </div>
                     </div>
                 </div>
-                <h2 className="meal-type">Bread</h2>
+                <h2 className="meal-type" id="bread">Bread</h2>
                 <div className="cards">
                     <div className="cards__container">
                         <div className="cards__wrapper">
