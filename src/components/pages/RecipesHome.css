@@ -3,3 +3,22 @@
     padding: 40px 0 0 0;
     font-size: 35px;
 }
+
+.recipe-cards {
+    padding: 0rem 0 5rem 0;
+    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+}
+
+.recipe-section {
+    width: 33%;
+    display: inline-block;
+}
+
+.recipe_cards__wrapper {
+    position: relative;
+    margin: 50px 0 0px;
+  }
+
+.recipe-card {
+    padding: 0 0 2rem 0;
+}
