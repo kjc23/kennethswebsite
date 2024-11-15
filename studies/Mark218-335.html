@@ -1,0 +1,684 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Mark 2:18-3:35</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="11d0f4cd-7dfc-80e9-aa3c-f1977df21a23" class="page sans"><header><h1 class="page-title">Mark 2:18-3:35</h1><p class="page-description"></p></header><div class="page-body"><p id="11d0f4cd-7dfc-80c1-a1a2-dd7319cd11b3" class=""><time>@October 17, 2024</time></p><figure id="11d0f4cd-7dfc-801a-8da0-e77238366ee1" class="link-to-page"><a href="https://www.notion.so/Mark-2-18-3-35-11d0f4cd7dfc801a8da0e77238366ee1?pvs=21">Mark 2:18-3:35</a></figure><h2 id="11d0f4cd-7dfc-802d-bc6a-cdb940f294b6" class="">Theme:</h2><p id="11d0f4cd-7dfc-8071-aeed-fe7849623bf2" class="">Jesus is instituting a new Kingdom of God under His authority.</p><h2 id="11d0f4cd-7dfc-8001-bee3-e96f4898a804" class="">Aim:</h2><p id="11d0f4cd-7dfc-8065-8105-cecde0ebf6cf" class="">Submit to God and follow Christ as a member of his new kingdom family.</p><hr id="11d0f4cd-7dfc-8062-99b0-e49d68112c00"/><p id="11d0f4cd-7dfc-80f1-ac2e-d32a7a15500e" class=""><em><mark class="highlight-gray">—</mark></em><mark class="highlight-gray"> </mark><em><mark class="highlight-gray">Read Passage —</mark></em></p><p id="11d0f4cd-7dfc-805c-b9d8-c981f4776b84" class=""><mark class="highlight-gray">— </mark><em><mark class="highlight-gray">Break into groups and search through passage, highlighting who interacts with Jesus, their reactions, and Jesus’s actions —</mark></em></p><h3 id="11d0f4cd-7dfc-8026-9bcd-cc90431fa32f" class="">Jesus vs. the Pharisees (2:18-3:6)</h3><hr id="11d0f4cd-7dfc-80df-8a58-f4b4514fcc23"/><ol type="1" id="11d0f4cd-7dfc-8065-83ec-e18a1a052237" class="numbered-list" start="1"><li><mark class="highlight-blue">In verses 18-20, who is interacting with Jesus and what are their reactions/Jesus’s reaction?</mark><ol type="a" id="11d0f4cd-7dfc-801f-9788-efe2c31c9eaa" class="numbered-list" start="1"><li><mark class="highlight-blue">Does anybody know anything about fasting?</mark><p id="11d0f4cd-7dfc-801d-8706-e2bf73e737f8" class=""><em>Mourning and Repentance. Only mandatory on Day of Atonement.</em></p></li></ol><ol type="a" id="11d0f4cd-7dfc-80c4-ad6c-d7feeb3c0395" class="numbered-list" start="2"><li><mark class="highlight-blue">Why then do Jesus’s disciples not fast?</mark><p id="11d0f4cd-7dfc-80c0-af95-e4b3653c0311" class=""><em>This is not a time of mourning for them. Jesus is there with them. Why would the friends of the bridegroom mourn in his presence?</em></p></li></ol><ol type="a" id="11d0f4cd-7dfc-8068-9b3e-fea20e9decd5" class="numbered-list" start="3"><li><mark class="highlight-blue">What does Jesus mean when He calls Himself the bridegroom?</mark><p id="11d0f4cd-7dfc-80a2-8d07-d4d1c55c4b1a" class=""><em><mark class="highlight-yellow">He is claiming to be God </mark></em><em>(Isaiah 64:1-5). </em></p><p id="11d0f4cd-7dfc-80be-80f3-ced00a47e3c3" class=""><em><strong>Keep this in mind as we read the rest of the passage</strong></em></p></li></ol></li></ol><p id="11d0f4cd-7dfc-80cd-aa35-f457b09284db" class=""><mark class="highlight-gray">— </mark><em><mark class="highlight-gray">Come back to 2:21-22 after going through 3:1-6 </mark></em><mark class="highlight-gray">—</mark></p><ol type="1" id="11d0f4cd-7dfc-8047-bb6e-eb030b47a398" class="numbered-list" start="2"><li><mark class="highlight-blue">In verses 23-28, we see Jesus and the Pharisees interacting again. What are the reactions like?</mark><p id="11d0f4cd-7dfc-8099-b1a5-e91be5553863" class=""><em><mark class="highlight-gray">—</mark></em><mark class="highlight-gray"> </mark><em><mark class="highlight-gray">Point out, Jesus is not actually breaking the law, just the Pharisaical laws —</mark></em></p><ol type="a" id="11d0f4cd-7dfc-8060-b41c-ccf6ef302842" class="numbered-list" start="1"><li><mark class="highlight-blue">Why does Jesus bring up David? (helper question: what do we know about David?)</mark></li></ol><p id="11d0f4cd-7dfc-80f3-b767-d4e4ae231c87" class=""><mark class="highlight-gray">— </mark><em><mark class="highlight-gray">Maybe break into groups for this —</mark></em><div class="indented"><p id="11d0f4cd-7dfc-807e-a23f-e1cb465d374a" class=""><em>The Pharisees approve of David, he was a man after God’s own heart yet he broke the law (for a sensible reason), they should therefore approve of Jesus.</em></p></div></p><ol type="a" id="11d0f4cd-7dfc-80ea-8a9b-c0e5586e1195" class="numbered-list" start="1"><li><mark class="highlight-blue">What does Jesus mean in verses 27 and 28?</mark><p id="11d0f4cd-7dfc-803f-bebd-f681440ae920" class=""><em>The Pharisees have gotten the Sabbath (and the law) all wrong. It’s meant to bring them closer to God rather than be simply a rule book.</em></p></li></ol></li></ol><ol type="1" id="11d0f4cd-7dfc-80aa-bb7a-c159b4333686" class="numbered-list" start="3"><li><mark class="highlight-blue">In verses 3:1-6, who is interacting with Jesus and what are the reactions? What is different about this interaction?</mark><p id="11d0f4cd-7dfc-802c-b9ac-d67231672f57" class=""><em>The Pharisees are ACTIVELY looking for a way to accuse Jesus.</em></p><ol type="a" id="11d0f4cd-7dfc-8054-ab05-d19327c2ea93" class="numbered-list" start="1"><li><mark class="highlight-blue">Why didn’t the Pharisees answer Jesus’s question in v4?</mark><p id="11d0f4cd-7dfc-802a-b957-fe4cf96926da" class=""><em>The Pharisees are no longer concerned with doing good. The law is purely surface-level to them.</em></p></li></ol><p id="11d0f4cd-7dfc-804a-b295-fcbb1fae96b4" class=""><em><mark class="highlight-gray">— Point out that the Herodians were political enemies to the Pharisees, yet they still work together to kill Jesus —</mark></em></p></li></ol><ol type="1" id="11d0f4cd-7dfc-80a0-a951-cc997f082b5f" class="numbered-list" start="4"><li><mark class="highlight-blue">What does Jesus’s parable in 2:21-22 mean?</mark><p id="11d0f4cd-7dfc-80f2-88f2-f8027b5bef14" class=""><em><mark class="highlight-yellow">Jesus’s coming kingdom</mark></em><em> does not fit onto what has been made of His law and people. </em><em><mark class="highlight-yellow">The old must be thrown out.</mark></em></p><p id="11d0f4cd-7dfc-808d-97d4-cd55f1c95bce" class=""><em><strong>Keep this in mind as we read the rest of the passage.</strong></em></p></li></ol><h3 id="11f0f4cd-7dfc-8061-b602-c41fe038d791" class="">Table Time</h3><table id="11f0f4cd-7dfc-800e-8e62-e0f5cea9c0a3" class="simple-table"><tbody><tr id="3d745a8a-e5c2-4cb6-9940-4aaa8c1bc15e"><td id="q}Gp" class="" style="width:103px"><strong>Event</strong></td><td id="UFu^" class="" style="width:103px"><strong>Jewish Reaction</strong></td><td id="?[NO" class="" style="width:103px"><strong>Learn about Jesus</strong></td></tr><tr id="d8dda395-eb9a-4b2e-94e2-671d40797821"><td id="q}Gp" class="" style="width:103px">Leper</td><td id="UFu^" class="" style="width:103px"></td><td id="?[NO" class="" style="width:103px"></td></tr><tr id="e9845f22-9ac3-4fef-8619-87ff6303d4cc"><td id="q}Gp" class="" style="width:103px">Ceiling</td><td id="UFu^" class="" style="width:103px"></td><td id="?[NO" class="" style="width:103px"></td></tr><tr id="11f0f4cd-7dfc-80fc-8a72-f3f1d2821a66"><td id="q}Gp" class="" style="width:103px">Levi</td><td id="UFu^" class="" style="width:103px"></td><td id="?[NO" class="" style="width:103px"></td></tr><tr id="11f0f4cd-7dfc-80ab-81b6-c0f339963884"><td id="q}Gp" class="" style="width:103px">Fasting</td><td id="UFu^" class="" style="width:103px"></td><td id="?[NO" class="" style="width:103px"></td></tr><tr id="11f0f4cd-7dfc-80e4-9632-fe33b1960f32"><td id="q}Gp" class="" style="width:103px">Picking grain</td><td id="UFu^" class="" style="width:103px"></td><td id="?[NO" class="" style="width:103px"></td></tr><tr id="11f0f4cd-7dfc-803e-a2b4-c21dd632275d"><td id="q}Gp" class="" style="width:103px">Healing</td><td id="UFu^" class="" style="width:103px"></td><td id="?[NO" class="" style="width:103px"></td></tr></tbody></table><p id="1200f4cd-7dfc-8026-8f3b-c6d6cdf616e4" class=""><mark class="highlight-blue">What are the trajectories of both sides of the table?</mark></p><hr id="11f0f4cd-7dfc-8004-8d17-c917a2c35c2b"/><h3 id="11d0f4cd-7dfc-80aa-951c-c8c4d7857a52" class="">Sinai - Part Two (v3:7-19)</h3><hr id="11d0f4cd-7dfc-803d-8650-fdc0d90299e7"/><p id="11d0f4cd-7dfc-80ae-8b17-e8f1792d9d8c" class=""><em><mark class="highlight-gray">— Show map, what places do we see? Not just Jewish regions, also Gentiles —</mark></em></p><ol type="1" id="11d0f4cd-7dfc-80ef-a091-c3969eb40e14" class="numbered-list" start="5"><li><mark class="highlight-blue">What do we notice about the setting of verses 13-19?</mark><ol type="a" id="11d0f4cd-7dfc-8029-a864-ddb760a64506" class="numbered-list" start="1"><li><mark class="highlight-blue">What is this reminiscent of (in the Old Testament)?</mark><p id="11d0f4cd-7dfc-80cb-a1a8-eb7408cf47b2" class=""><em>Mount Sinai (Exodus 19:1-6)</em></p></li></ol><ol type="a" id="11f0f4cd-7dfc-806b-bdaf-cc063b8cc0ae" class="numbered-list" start="2"><li><mark class="highlight-blue">Why is that significant?</mark><p id="11f0f4cd-7dfc-80eb-bfcf-dd6585434b34" class=""><em>Mount Sinai is where God called together the tribes of Israel to Himself for the first time. </em><em><mark class="highlight-yellow">Jesus is now instating a new Israel made up of those that believe in Him.</mark></em></p></li></ol></li></ol><h3 id="11f0f4cd-7dfc-8050-8584-c6925ab66a30" class="">Jesus’s Family Mark Sandwich (v20-35)</h3><hr id="11f0f4cd-7dfc-80a2-bdb0-f9162cb381cd"/><p id="11f0f4cd-7dfc-807d-879c-cceff61a7895" class=""><em><mark class="highlight-gray">— Point out Mark Sandwich —</mark></em></p><ol type="1" id="11f0f4cd-7dfc-8015-bccd-fc19b6b0e0ea" class="numbered-list" start="6"><li><mark class="highlight-blue">In 3:22-30, who is interacting with Jesus? Where have they come from? How do they feel about Jesus?</mark><p id="11f0f4cd-7dfc-805e-8c11-e5f0ad898542" class=""><em>The scribes have come from Jerusalem to see Jesus. Planned attack against Him.</em></p><ol type="a" id="11f0f4cd-7dfc-802a-a438-fd18d3eec2c3" class="numbered-list" start="1"><li><mark class="highlight-blue">What are the Scribes accusing Jesus of?</mark><p id="11f0f4cd-7dfc-8055-bc64-dfd125a09c91" class=""><em>Being possessed by Satan.</em></p></li></ol></li></ol><p id="11f0f4cd-7dfc-8002-8084-d02bdaa202f3" class=""><em><mark class="highlight-gray">— Split into groups to discuss the Strong Man parable —</mark></em></p><ol type="1" id="11f0f4cd-7dfc-80eb-b7c0-f4b573f10479" class="numbered-list" start="7"><li><mark class="highlight-blue">Who is the strong man? And what is being stolen from him?</mark><p id="11f0f4cd-7dfc-80fd-b096-ed060e398062" class=""><em>Satan is the strong man and Jesus is binding him up and stealing us back from him.</em></p></li></ol><ol type="1" id="11f0f4cd-7dfc-8010-88de-dbafbbf36ff6" class="numbered-list" start="8"><li><mark class="highlight-blue">What does Jesus mean by verses 28-30? (remember to read in context)</mark><p id="11f0f4cd-7dfc-80e8-9696-feab288ba26a" class=""><em>Jesus is saying that those who claim that the work of God is done by and through the devil are so hard hearted that they will never turn and repent. </em></p><p id="11f0f4cd-7dfc-80a0-a62c-cf1364f7900c" class=""><em>v30 - “for they were saying, “He has an unclean spirit.”</em></p></li></ol><ol type="1" id="11f0f4cd-7dfc-806f-9013-dda5d778cc27" class="numbered-list" start="9"><li><mark class="highlight-blue">What does Jesus mean by v33? What does He not mean?</mark><p id="11f0f4cd-7dfc-80df-9d11-fe2f63b98504" class=""><em>He does not mean that His family means nothing to Him. He is introducing the concept of the family of God. Those that believe in Him and do His will are His family.</em></p></li></ol><ol type="1" id="1200f4cd-7dfc-80d0-b579-fabe01ea6685" class="numbered-list" start="10"><li><mark class="highlight-blue">Why does Mark sandwich Jesus’s discourse with the Pharisees with passages about who Jesus’s family is?</mark><p id="1200f4cd-7dfc-8099-b31c-e5da266d9b02" class=""><em>Emphasizes that Jesus’s family is made up of those that have been saved by Him from the devil. </em><em><strong>We </strong></em><em>are part of Jesus’s family.</em></p></li></ol><ol type="1" id="11f0f4cd-7dfc-80a2-9e4f-e69d12cf2fb5" class="numbered-list" start="11"><li><mark class="highlight-blue">How does this tie into the themes that we have seen throughout the passage?</mark><p id="11f0f4cd-7dfc-80f2-86ea-d5119f3432e3" class=""><em>Jesus is creating a new Kingdom that is populated with those that believe in Him and do His will rather than those that are physically born into Israel.</em></p></li></ol><h3 id="1200f4cd-7dfc-805e-a8ec-df6a1498d3d6" class="">Application</h3><hr id="1200f4cd-7dfc-80b1-a892-de685c23d044"/><ol type="1" id="1200f4cd-7dfc-8046-bbef-d8035ea1293c" class="numbered-list" start="12"><li><mark class="highlight-blue">Why does all of this matter?</mark><ol type="a" id="1200f4cd-7dfc-80c3-9cbb-cc9b35b15cd6" class="numbered-list" start="1"><li><mark class="highlight-blue">Why would it be surprising to the Pharisees that the new Kingdom is made up of those that simply believe?</mark></li></ol><ol type="a" id="1200f4cd-7dfc-80b3-b8e6-f5b428c9e273" class="numbered-list" start="2"><li><mark class="highlight-blue">Why is this important for us today?</mark></li></ol></li></ol></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/kennethswebsite/static/css/main.78a463ef.css",
+    "main.js": "/kennethswebsite/static/js/main.fd81478a.js",
+    "static/js/453.bb828c5d.chunk.js": "/kennethswebsite/static/js/453.bb828c5d.chunk.js",
+    "static/media/img-home.jpg": "/kennethswebsite/static/media/img-home.c034239ee9a63564602b.jpg",
+    "static/media/recipes.webp": "/kennethswebsite/static/media/recipes.8de9b64ca68f96834639.webp",
+    "static/media/bible2.jpeg": "/kennethswebsite/static/media/bible2.4eee9621915b2d799453.jpeg",
+    "static/media/music.webp": "/kennethswebsite/static/media/music.7bda7e81677f30a447f1.webp",
+    "index.html": "/kennethswebsite/index.html",
+    "main.78a463ef.css.map": "/kennethswebsite/static/css/main.78a463ef.css.map",
+    "main.fd81478a.js.map": "/kennethswebsite/static/js/main.fd81478a.js.map",
+    "453.bb828c5d.chunk.js.map": "/kennethswebsite/static/js/453.bb828c5d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.78a463ef.css",
+    "static/js/main.fd81478a.js"
+  ]
+}

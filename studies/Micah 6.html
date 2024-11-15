@@ -1,0 +1,676 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Micah 6</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="f8fbb839-5d3c-4851-a483-92cf75a3a69c" class="page sans"><header><h1 class="page-title">Micah 6</h1><p class="page-description"></p></header><div class="page-body"><p id="d85e03f5-8409-439c-b3e1-833867f2d675" class=""><time>@March 21, 2024</time> </p><figure id="100f3a38-e652-459c-a8b1-f8fea22b1577" class="link-to-page"><a href="https://www.notion.so/Passage-100f3a38e652459ca8b1f8fea22b1577?pvs=21">Passage</a></figure><p id="f83144f1-d996-476e-8126-620168987694" class=""><strong>Theme:</strong> The Lord has always been faithful to Israel and in return He asks them to “act justly and to love mercy and to walk humbly with Him” however, Israel never does.</p><p id="75a14b56-6d7a-409c-9092-34ef9d6bf664" class=""><strong>Aim:</strong> “Act justly and love mercy and walk humbly with your God” knowing that Jesus made this possible for us.</p><h3 id="a7a7fc1f-f129-4e92-b798-20f228348d50" class="">Opening Question</h3><hr id="821c550a-52a5-4353-b1be-7da517b35dbd"/><p id="74bb99e8-04ae-4d80-8c19-e28ccc7e739f" class=""><mark class="highlight-red">What does it mean to worship God / in what ways do we worship God?</mark></p><ul id="7c140085-3e4b-4a2a-9545-2b1c168aa8ac" class="bulleted-list"><li style="list-style-type:disc"><em>Song</em></li></ul><ul id="61a9ecf9-441e-41cf-8996-73cda335447e" class="bulleted-list"><li style="list-style-type:disc"><em>Prayer</em></li></ul><ul id="f32efe5b-8ffb-4767-a6a7-4e84f9ab2828" class="bulleted-list"><li style="list-style-type:disc"><em>With our time / money</em></li></ul><ul id="4631cb48-206c-4187-af91-008e76451362" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue"><em>The way we live</em></mark></li></ul><p id="b344d26b-38ee-48f8-92b7-cc73382be670" class=""><em>Want to encourage discussion that will point towards the Aim sentence.</em></p><p id="16e10e2b-3520-4833-a074-9dc80d47f933" class="">OR</p><p id="ae2f02cb-4ec4-4af4-a2d7-1be30ecf475f" class=""><mark class="highlight-red">How might we tempted / When are we at risk of becoming wearied by the worship of God? Is this relatable?</mark></p><h3 id="bdb41d5e-070f-44be-99db-9cc128b5d06e" class="">God’s Opening Statement (v1-5)</h3><hr id="bbf96acb-9529-46f3-b64a-f0f2522bf2f6"/><ol type="1" id="91a2f3f8-630c-4b19-8f0a-2babbd76f22b" class="numbered-list" start="1"><li><mark class="highlight-red">What is happening in verses 1-5?</mark><ul id="aa0dec01-dc61-4f13-9b59-4dff0bb6cb40" class="bulleted-list"><li style="list-style-type:disc"><em>God comes to the Israelites and asks them how He has done evil towards them</em><ul id="a0f867ee-a41c-49f0-b6dc-15688e3e901b" class="bulleted-list"><li style="list-style-type:circle"><em>Rhetorical question as God has done no evil towards Israel</em></li></ul></li></ul><ul id="5f9670fd-ec72-467e-a9c5-0f2b5c09fdd3" class="bulleted-list"><li style="list-style-type:disc"><em>God reminds the Israelites of His faithfulness and goodness</em><ul id="c59bebe7-7fda-42cd-afd7-da4ffe95774a" class="bulleted-list"><li style="list-style-type:circle"><em>Brought them out of Egypt / slavery (v4)</em></li></ul><ul id="fffc09fa-4f39-4340-9a88-c0d64217ed15" class="bulleted-list"><li style="list-style-type:circle"><em>Sent Moses, Aaron, and Miriam (Ex. 15) to lead (v4)</em></li></ul><ul id="2f455abb-c7fc-4f2b-8f24-019b5e01f542" class="bulleted-list"><li style="list-style-type:circle"><em>Balak and Balaam (v5)</em></li></ul><ul id="753f8535-2a92-4c36-8b59-34b666173366" class="bulleted-list"><li style="list-style-type:circle"><em>Journey from Shittim to Gilgal (v5)</em><ul id="b9aad6d5-8ff0-423f-8cf0-e6a526c87981" class="bulleted-list"><li style="list-style-type:square">Shittim is the first place Israel stayed after they left Egypt</li></ul><ul id="a62d5c7b-08bd-4f49-b1bf-61e52a14ebaf" class="bulleted-list"><li style="list-style-type:square">Gilgal is the first place Israel stayed after entering the Promised Land</li></ul></li></ul></li></ul></li></ol><ol type="1" id="18df634e-d251-487a-8b0a-e8111d91456f" class="numbered-list" start="2"><li><mark class="highlight-red">What extra information is given by using the word burdened in verse 3? What is the connotation of this? And why does it matter?</mark><ul id="75d7387a-e4f9-4613-b884-6c9e4cc6c3c3" class="bulleted-list"><li style="list-style-type:disc"><em>Shows depth of relationship</em></li></ul><ul id="89debfa7-4b77-4324-bf3e-45974841dd2c" class="bulleted-list"><li style="list-style-type:disc"><em>Similar in tone to Malachi</em></li></ul></li></ol><ol type="1" id="a34f72d2-796f-46b7-b65f-1a19d4565c0d" class="numbered-list" start="3"><li><mark class="highlight-red">With the context of Micah in mind, why does the Lord have to remind the Israelites of His faithfulness? </mark><em><mark class="highlight-red">Point to specific verses in Micah</mark></em><ul id="ffb9b199-f202-434a-8e57-c0376ce66732" class="bulleted-list"><li style="list-style-type:disc"><em>Israel has forgotten the Lord</em><ul id="1e035ba7-092c-4bfd-952f-f02b78bb53e2" class="bulleted-list"><li style="list-style-type:circle"><em>3v2 “You who hate good and love evil”</em></li></ul><ul id="10fd40de-de58-4067-98ee-875079dd536e" class="bulleted-list"><li style="list-style-type:circle"><em>3v9 “you rulers of Israel, who despise justice and distort all that is right”</em></li></ul></li></ul><ul id="063bede4-dca7-493d-93ea-565372f305eb" class="bulleted-list"><li style="list-style-type:disc"><em>They think they know the Lord, but they have a twisted perception of Him</em><ul id="fa7b93b9-2325-4b6a-8f0b-9cfb2443e2eb" class="bulleted-list"><li style="list-style-type:circle"><em>2v6 “Do not prophesy about these things”</em></li></ul><ul id="32268023-90c5-4eb7-9d3c-df7afa22ac48" class="bulleted-list"><li style="list-style-type:circle"><em>3v9 “you rulers of Israel, who despise justice and distort all that is right”</em></li></ul><ul id="c41246e0-9a32-40bf-9144-645d81117ce7" class="bulleted-list"><li style="list-style-type:circle"><em>3v11 “…priests teach for a price…Yet they look for the Lord’s support and say, ‘Is not the Lord among us?’”</em></li></ul></li></ul></li></ol><ol type="1" id="a2f09f80-8098-4d2d-847d-5948bd934020" class="numbered-list" start="4"><li><mark class="highlight-red">What aspects of God’s goodness are brought out by verse 4-5?</mark><ul id="6a276415-28f4-471b-907a-dbe9b32f838b" class="bulleted-list"><li style="list-style-type:disc"><em>Brought them out of slavery (salvation / love)</em></li></ul><ul id="fe0fd978-8edd-4ef0-a72c-73fcc8c06bbd" class="bulleted-list"><li style="list-style-type:disc"><em>The Lord brings Israel a leader (provision)</em></li></ul><ul id="591b4f9f-a2fd-4311-8c36-90cad3c6f4ff" class="bulleted-list"><li style="list-style-type:disc"><em>Kept them from being cursed, instead gave them blessing [Balaam] (provision / love)</em></li></ul></li></ol><ol type="1" id="f2a5a5e4-2d27-4d47-a606-8f2a4d0da770" class="numbered-list" start="5"><li><mark class="highlight-red">Why does the Lord </mark><strong><em><mark class="highlight-red">choose </mark></em></strong><mark class="highlight-red">to continually remind Israel? What does this show us about the Lord?</mark><ul id="e6a89814-0617-4a51-8204-6bd9672e3f38" class="bulleted-list"><li style="list-style-type:disc"><em>Even though Israel turns away from the Lord and forgets the covenant, the Lord is faithful to His people.</em></li></ul><ul id="247ae8bf-6041-4a4d-8719-b3ec018626b7" class="bulleted-list"><li style="list-style-type:disc"><em>The Lord could have chosen to wipe out the nation of Israel (who was at a time worse than Sodom and Gomorrah) yet He sent salvation to His people through Jesus.</em></li></ul></li></ol><ol type="1" id="1bb48fdb-82fd-4f20-9ab1-eb1aec85ca28" class="numbered-list" start="6"><li><mark class="highlight-red">How does this apply to us? Write a list of all the ways throughout your life that God has been faithful and good to you.</mark><ul id="2cf98e03-ba3c-40bd-a126-55de1310e21c" class="bulleted-list"><li style="list-style-type:disc"><em>God has brought us salvation through Jesus</em></li></ul><ul id="338cc59b-aaab-4fdf-9195-56db5dedd4c6" class="bulleted-list"><li style="list-style-type:disc"><em>He has not left us alone but given us His Holy Spirit</em></li></ul><ul id="a7938931-f31c-4f4f-bace-df4ae94bd6d0" class="bulleted-list"><li style="list-style-type:disc"><em>Other specific personal reasons…</em></li></ul></li></ol><ol type="1" id="69cd3e2b-9e1c-41a7-b0cb-7a182a5f2429" class="numbered-list" start="7"><li><mark class="highlight-red">How often are we tempted to act as the Israelites did and forget God’s goodness? And how do we prevent that / fix that when it happens?</mark><p id="5a0bfe34-a5cb-4a08-85f0-f782d85293c3" class=""><em>Discuss. Probably quite often.</em></p></li></ol><h3 id="a302a9f4-2744-4eb3-92f8-a55534128b7b" class="">How we should respond to God’s goodness (v6-8)</h3><hr id="f4ceae76-df5e-4136-bfe9-25d3077d4f33"/><ol type="1" id="4caeab75-59ad-4050-b562-12271509a182" class="numbered-list" start="8"><li><mark class="highlight-red">In verses 6-7, do you notice anything about the examples of sacrifices given?</mark><ul id="4212adf0-e0da-466e-ab38-bbd20637af30" class="bulleted-list"><li style="list-style-type:disc"><em>Each example becomes more and more valuable</em><ul id="c23622e5-8f17-41e3-92f8-f4899b597116" class="bulleted-list"><li style="list-style-type:circle"><em>Calves → Thousands of Rams → Ten thousand rivers of olive oil → First born child</em></li></ul></li></ul></li></ol><ol type="1" id="a67fc72c-d68a-456d-a923-6bbb5cb05b72" class="numbered-list" start="9"><li><mark class="highlight-red">What is the significance of this? Why does Micah give these examples?</mark><ul id="02fa8f86-ddeb-4bdb-8522-bd1fc3f54c7d" class="bulleted-list"><li style="list-style-type:disc"><em>Micah is trying to highlight that </em><strong><em>all God has asked for</em></strong><em> is to act justly, love mercy, and walk humbly with Him.</em></li></ul><ul id="adf61d9a-a97f-49f9-8e93-9994b881da56" class="bulleted-list"><li style="list-style-type:disc"><em>The Israelites are still thinking of God in legalistic terms and seem frustrated when no amount of material offerings please Him.</em></li></ul><ul id="c4370cb4-2501-457f-83bf-06926c74ad28" class="bulleted-list"><li style="list-style-type:disc"><em>The greatest offering we can give (and the one offering God truly desires of us) is to live in relationship with Him.</em></li></ul><ul id="5f99b6a2-18ec-49d8-8aa6-c4664b47d543" class="bulleted-list"><li style="list-style-type:disc"><em>God is more concerned with the heart than He is with material offerings.</em></li></ul></li></ol><ol type="1" id="8d39e270-4fcf-4018-992b-cbeb7e2ec835" class="numbered-list" start="10"><li><mark class="highlight-red">How often do we do what verse 8 tells us to do?</mark><p id="75edaafd-d0b4-4e90-afeb-9e811f51e78c" class=""><em>Discuss.</em></p></li></ol><ol type="1" id="875f01b6-64f6-444a-8579-c2607bcc7d9e" class="numbered-list" start="11"><li><mark class="highlight-red">What does it look like to walk humbly with God?</mark><p id="dd6c4241-6432-4f2b-93d9-acaece10b9b2" class=""><em>Discuss.</em></p></li></ol><h3 id="04d2db3f-ad2a-4ca2-bb20-ae34edf6dbe7" class="">Israel’s Crimes and Sentencing (v9-16)</h3><hr id="bd08d9cc-0324-4c12-82b6-3330c67df4a9"/><ol type="1" id="bcd3b031-149c-43f6-96a4-fa0d01076cc4" class="numbered-list" start="12"><li><mark class="highlight-red">What have the Israelites done? What are their crimes?</mark><ul id="09cc4353-2808-4b72-9a62-eee4520f24c0" class="bulleted-list"><li style="list-style-type:disc"><em>Ill-gotten treasures, dishonest scales, false weights (v10-11)</em></li></ul><ul id="ef4d04af-5c21-4210-9bdb-e33c42e0a095" class="bulleted-list"><li style="list-style-type:disc"><em>Violence, lying (v12)</em></li></ul><ul id="2e4f7134-9edf-4074-b94e-73a1c303c42e" class="bulleted-list"><li style="list-style-type:disc"><em>Observed statutes of Omri [1 Kings 16:25] and followed traditions of Ahab’s [1 Kings 16:30] house (v16)</em></li></ul><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="de236639-d2c1-45b0-8b18-e4a647e58acc"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><em>Note: </em>Contrast between verses 8 and 16<br/>Following in the ways of the Lord vs. following in the ways of wicked kings<br/></div></figure></li></ol><ol type="1" id="7e87e7d7-fdee-4384-873f-e80927a94027" class="numbered-list" start="13"><li><mark class="highlight-red">Is there significance in the types of punishment that the Lord gives to Israel? Compare verses 13-16 with verses 1-5.</mark><ul id="6099f449-0a4b-4d1f-a002-1d80d7e35389" class="bulleted-list"><li style="list-style-type:disc"><em>Verses 1-5 show the provision of the Lord for Israel</em></li></ul><ul id="09919a04-4abb-44dc-b9f6-9991a6a4364d" class="bulleted-list"><li style="list-style-type:disc"><em>In verses 13-16 many of the punishments are directly opposite of provision</em><ul id="eefe4a52-f3d4-4fa9-bd95-b56427c8eae7" class="bulleted-list"><li style="list-style-type:circle"><em>“You will store up but save nothing” (v14)</em></li></ul><ul id="3fb2416d-394f-4e61-b0d3-ccdcbb4e4d6f" class="bulleted-list"><li style="list-style-type:circle"><em>“You will plant but not harvest” (v15)</em></li></ul><ul id="5f9a619d-338c-4a83-b342-4a0eb65000aa" class="bulleted-list"><li style="list-style-type:circle"><em>“You will press olives but not use the oil” (v15)</em></li></ul><ul id="fa8a4de8-748f-4c83-a087-a690a6b74059" class="bulleted-list"><li style="list-style-type:circle"><em>“You will crush grapes but not drink the wine” (v15)</em></li></ul><ul id="57578db4-30ee-4c2e-a04c-9be1d05f9519" class="bulleted-list"><li style="list-style-type:circle"><em>“I will give you over to ruin and your people to derision” (v16)</em></li></ul></li></ul></li></ol><ol type="1" id="32f28016-a469-4465-a92e-68a929787421" class="numbered-list" start="14"><li><mark class="highlight-red">How do these verses apply to us? What can we take away from them?</mark><ul id="610e2e0e-ea17-4aeb-ad03-7bb98db9d6d7" class="bulleted-list"><li style="list-style-type:disc"><em>We see the danger in not following what verse 8 tells. In following our own sinful desires</em></li></ul><ul id="8c71ce6d-60bd-4cd2-b3d8-ffc29c693733" class="bulleted-list"><li style="list-style-type:disc"><em>Proverbs 24:30-34</em></li></ul></li></ol><h3 id="2546c60d-83f5-44e1-bb5a-93e2fb3de31b" class="">Closing Questions</h3><hr id="ecff9434-a307-4a51-ab39-9243c2f038de"/><ol type="1" id="088f26e3-08e2-4569-855a-6add947f0943" class="numbered-list" start="15"><li><mark class="highlight-red">How has Jesus made it possible for us to follow the command in verse 8?</mark></li></ol><ol type="1" id="0f8ef3cd-c92a-48a1-834a-9cb61bc72ad8" class="numbered-list" start="16"><li><mark class="highlight-red">How does this passage as a whole encourage us in our worship of God?</mark></li></ol><ol type="1" id="994c90a5-600b-4a03-9910-54a14bd5bede" class="numbered-list" start="17"><li><mark class="highlight-red">What is one big thing that you took away from this passage?</mark></li></ol></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
