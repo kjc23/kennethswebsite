@@ -19,7 +19,7 @@ export default function RecipesHome(props) {
                             {/* <ul className="cards__items"> */}
                             <div className="recipe-card">
                                 <CardItem
-                                src="/kennethswebsite/images/teriyaki-chicken.webp"
+                                src="/kennethswebsite/images/teriyaki.jpg"
                                 text="Instant Pot Teriyaki Chicken"
                                 path="/recipes/instantpot-teriyaki-chicken"
                                 />
@@ -59,7 +59,7 @@ export default function RecipesHome(props) {
                         <div className="recipe_cards__wrapper">
                             {/* <ul className="cards__items_recipes"> */}
                             <CardItem
-                                src="/kennethswebsite/images/gfbread.jpg"
+                                src="/kennethswebsite/images/bread.jpg"
                                 text="Gluten Free Bread"
                                 label="St Andrews"
                                 path="/recipes/gluten-free-bread"

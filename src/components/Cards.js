@@ -9,6 +9,24 @@ export default function Cards() {
             <div className="cards__container">
                 <div className="cards__wrapper">
                     <ul className="cards__items">
+                    <CardItem
+                        src="/kennethswebsite/images/recipes.webp"
+                        text="Recipes"
+                        label="Adventure"
+                        path="/recipes"
+                        />
+                        <CardItem
+                        src="/kennethswebsite/images/BOOKS.jpg"
+                        text="Reading List"
+                        path="/music"
+                        />
+                        <CardItem
+                        src="/kennethswebsite/images/coding.avif"
+                        text="Coding Projects"
+                        path="/recipes"
+                        />
+                    </ul>
+                    <ul className="cards__items">
                         <CardItem
                         src="/kennethswebsite/images/bible2.jpeg"
                         text="Bible"
@@ -20,14 +38,6 @@ export default function Cards() {
                         text="Music"
                         label="Luxury"
                         path="/music"
-                        />
-                    </ul>
-                    <ul className="cards__items">
-                        <CardItem
-                        src="/kennethswebsite/images/recipes.webp"
-                        text="Recipes"
-                        label="Adventure"
-                        path="/recipes"
                         />
                     </ul>
                 </div>

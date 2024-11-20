@@ -25,9 +25,31 @@ export default function Navbar() {
     }, [])
     window.addEventListener('resize', showButton);
 
+    const [showNavbar, setShowNavbar] = useState(true);
+    const [lastScrollY, setLastScrollY] = useState(0);
+  
+    useEffect(() => {
+      const handleScroll = () => {
+        const currentScrollY = window.scrollY;
+        if (currentScrollY > lastScrollY) {
+          // Scrolling down
+          setShowNavbar(false);
+        } else {
+          // Scrolling up
+          setShowNavbar(true);
+        }
+        setLastScrollY(currentScrollY);
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, [lastScrollY]);
+
     return (
       <>
-          <nav className="navbar">
+          <nav className={`navbar ${showNavbar ? 'show' : 'hide'}`}>
               <div className="navbar-container">
                 {/* <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
                   ABB <FontAwesomeIcon icon={faDumbbell} />
