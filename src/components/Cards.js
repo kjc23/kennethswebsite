@@ -21,9 +21,9 @@ export default function Cards() {
                         path="/music"
                         />
                         <CardItem
-                        src="/kennethswebsite/images/coding.avif"
-                        text="Coding Projects"
-                        path="/recipes"
+                        src="/kennethswebsite/images/ironAge.png"
+                        text="Final Year Dissertation"
+                        path="/VR"
                         />
                     </ul>
                     <ul className="cards__items">
